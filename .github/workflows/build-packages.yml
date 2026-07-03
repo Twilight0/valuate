@@ -1,0 +1,96 @@
+name: Build Packages
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  archlinux:
+    name: Arch Linux
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install dependencies
+        run: |
+          pacman -Syu --noconfirm
+          pacman -S --noconfirm base-devel git meson vala ninja gtk3 libhandy xapp gtksourceview4 libsoup3 libgee libmpc mpfr
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build package
+        run: makepkg -srf --noconfirm
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: archlinux-packages
+          path: *.pkg.tar.zst
+
+  debian:
+    name: Debian
+    runs-on: ubuntu-latest
+    container: debian:bookworm
+    steps:
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y git devscripts debhelper dh-strip-nondeterminism meson valac libgtk-3-dev libhandy-1-dev libxapp-dev libgtksourceview-4-dev libsoup-3.0-dev libgee-0.8-dev libmpc-dev libmpfr-dev
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build package
+        run: |
+          dpkg-buildpackage -us -uc -b
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: debian-packages
+          path: ../*.deb
+
+  ubuntu:
+    name: Ubuntu
+    runs-on: ubuntu-latest
+    container: ubuntu:24.04
+    steps:
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y git devscripts debhelper dh-strip-nondeterminism meson valac libgtk-3-dev libhandy-1-dev libxapp-dev libgtksourceview-4-dev libsoup-3.0-dev libgee-0.8-dev libmpc-dev libmpfr-dev
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build package
+        run: |
+          dpkg-buildpackage -us -uc -b
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu-packages
+          path: ../*.deb
+
+  release:
+    name: Create Release
+    needs: [archlinux, debian, ubuntu]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: artifacts/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

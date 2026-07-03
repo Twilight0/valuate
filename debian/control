@@ -1,0 +1,15 @@
+Source: valuate
+Section: utils
+Priority: optional
+Maintainer: Twilight0 <twilight0@vivaldi.net>
+Build-Depends: debhelper-compat (= 13), meson, valac, libgtk-3-dev, libhandy-1-dev, libxapp-dev, libgtksourceview-4-dev, libsoup-3.0-dev, libgee-0.8-dev, libmpc-dev, libmpfr-dev
+Standards-Version: 4.6.2
+Homepage: https://github.com/Twilight0/valuate
+
+Package: valuate
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A GTK3, XApp and Cinnamon-rebased calculator fork
+ Valuate is a desktop calculator application designed for traditional
+ desktop environments like Cinnamon. It is a fork of GNOME Calculator
+ rebased to use GTK3, XApp, and Cinnamon libraries.
