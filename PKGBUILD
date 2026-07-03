@@ -1,18 +1,21 @@
 # Maintainer: Twilight0 <twilight0@vivaldi.net>
-pkgname=valuate
-pkgver=1.0.0
+pkgname=valuate-git
+pkgver=1.0.0.r0.g0000000
 pkgrel=1
 pkgdesc="A GTK3, XApp and Cinnamon-rebased calculator fork"
 arch=('x86_64')
-url="https://github.com/valuate-calculator/valuate"
+url="https://github.com/Twilight0/valuate"
 license=('GPL3')
 depends=('gtk3' 'libhandy' 'xapp' 'gtksourceview4' 'libsoup3' 'libgee' 'libmpc' 'mpfr')
 makedepends=('vala' 'meson' 'ninja' 'git')
-source=("${pkgname}::git+file:///home/twilight/Projects/valuate#branch=gnome-41")
+provides=('valuate')
+conflicts=('valuate')
+source=("git+https://github.com/Twilight0/valuate.git#branch=main")
 sha256sums=('SKIP')
 
 pkgver() {
-  echo "1.0.0"
+  cd "$pkgname"
+  git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
