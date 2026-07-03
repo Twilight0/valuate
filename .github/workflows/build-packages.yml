@@ -52,11 +52,15 @@ jobs:
           fetch-depth: 0
       - name: Build package
         run: dpkg-buildpackage -us -uc -b
+      - name: Copy packages
+        run: |
+          mkdir -p /tmp/packages
+          cp ../*.deb /tmp/packages/
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: debian-packages
-          path: "../*.deb"
+          path: /tmp/packages/*.deb
 
   ubuntu:
     name: Ubuntu
@@ -74,11 +78,15 @@ jobs:
           fetch-depth: 0
       - name: Build package
         run: dpkg-buildpackage -us -uc -b
+      - name: Copy packages
+        run: |
+          mkdir -p /tmp/packages
+          cp ../*.deb /tmp/packages/
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: ubuntu-packages
-          path: "../*.deb"
+          path: /tmp/packages/*.deb
 
   release:
     name: Create Release
