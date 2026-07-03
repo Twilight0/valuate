@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.x.valuate.SearchProvider
+Exec=@libexecdir@/valuate-search-provider

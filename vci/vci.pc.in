@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+datadir=@prefix@/share
+includedir=@prefix@/include
+
+Name: libvci
+Description: Valuate Libray GTK Interface
+URL: http://live.gnome.org/
+Version: @PROJECT_VERSION@
+Requires: vcalc-2 >= 3.34 gtk+-3.0 > 3.19.3
+Libs: -L${libdir} -lvci-@API_VERSION@
+Cflags: -I${includedir}/vci-@API_VERSION@

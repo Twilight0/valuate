@@ -1,0 +1,176 @@
+.sourceview {
+  padding: 0px 12px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  font-size: 1.4em;
+
+}
+
+.info-view {
+  padding: 0px;
+  padding-bottom: 4px;
+}
+
+.equation-symbol {
+  padding: 0px 12px;
+}
+
+mathdisplay {
+  border: solid @borders 1px;
+  margin: 6px 12px 0 12px;
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+mathdisplay:last-child {
+  margin-bottom: 12px;
+}
+
+clamp.small mathdisplay {
+  border-width: 1px 0;
+  margin: 6px 0 0 0;
+}
+
+clamp.small mathdisplay:first-child {
+  border-top-width: 0;
+  margin: 0;
+}
+
+clamp.small mathdisplay:last-child {
+  border-bottom-width: 0;
+}
+
+clamp > grid > :first-child {
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin-top: 12px;
+}
+
+clamp.small > grid > :first-child {
+  margin-top: 0;
+}
+
+.math-buttons > grid {
+  /* 5 44px high buttons and 4px spacing. */
+  min-height: calc(44px*5+4px*4);
+  /* 5 60px wide buttons and 4px spacing. */
+  /* Update the clamp size in templates accordingly. */
+  min-width: calc(60px*5+4px*4-6px);
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.math-buttons.unfolded > grid {
+  min-width: calc(60px*5+4px*4);
+}
+
+.math-buttons.unfolded > grid:not(:only-child):first-child {
+  margin-right: 6px;
+}
+
+.math-buttons.unfolded > grid:not(:only-child):last-child {
+  margin-left: 6px;
+}
+
+.converter,
+mathconverter {
+  /* Prevents the squeezer transition from being cut 12px away from the border */
+  padding: 6px 12px 0 12px;
+}
+
+.converter > :not(squeezer):not(:first-child),
+mathconverter > :not(squeezer):not(:first-child),
+.converter > squeezer:not(:first-child) > :first-child,
+mathconverter > squeezer:not(:first-child) > :first-child {
+  /* Prevents the squeezer transition from being cut 12px away from the border */
+  margin-left: 6px;
+}
+
+.bit-panel {
+  padding: 6px;
+  border: solid @borders 1px;
+  border-width: 1px 0;
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin: 6px 0 0 0;
+}
+
+clamp:not(.small) .bit-panel {
+  border-width: 1px;
+  margin: 6px 12px 0 12px;
+}
+
+clamp.small .bit-panel {
+  padding-top:4px;
+  padding-bottom: 4px;
+  font-size: 0.9em;
+}
+
+clamp.small .bit-panel button {
+  min-height: 20px;
+}
+
+.math-buttons button {
+  font-size: 1.1em;
+  /* Counter the button.text-button style. */
+  padding: 2px 4px 2px 4px;
+}
+
+  .math-buttons .number-button {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+
+  .math-buttons .numeric-point-button {
+  }
+
+  .math-buttons .fx-button {
+  }
+
+.bit-toggle-button {
+  padding: 1px;
+  min-width: 9px;
+}
+
+.bit-marker-label {
+  margin: 0 12px;
+}
+
+.history-view {
+  border-width: 0 0 1px 0;
+}
+
+.history-view, .history-entry {
+  background-color: shade(@theme_base_color, .95);
+}
+
+.history-view:backdrop, .history-entry:backdrop {
+  background-color: shade(@theme_unfocused_base_color, .97);
+}
+
+.history-entry {
+  border-top: 1px groove @borders;
+  padding: 6px 3px;
+  font-size: 1.3em;
+}
+
+  .history-entry .equation-label {
+    /* word-spacing: 2px; Doesn't work (yet) in GTK */
+  }
+
+  .history-entry .equation-symbol {
+    font-weight: lighter;
+  }
+
+  .history-entry .answer-label {
+  }
+
+/* Used for MathVariablePopover */
+row.popover-row {
+  border-bottom: 1px groove @borders;
+  min-height: 35px;
+}
+
+window > deck > * {
+  min-width: 360px;
+}

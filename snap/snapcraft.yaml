@@ -1,0 +1,95 @@
+name: valuate
+version: git
+summary: Valuate
+description: |
+  Valuate is an application that solves mathematical equations.
+  Though it at first appears to be a simple calculator with only basic
+  arithmetic operations, you can switch into Advanced, Financial, or
+  Programming mode to find a surprising set of capabilities.
+
+  The Advanced calculator supports many operations, including:
+  logarithms, factorials, trigonometric and hyperbolic functions,
+  modulus division, complex numbers, random number generation, prime
+  factorization and unit conversions.
+
+  Financial mode supports several computations, including periodic interest
+  rate, present and future value, double declining and straight line
+  depreciation, and many others.
+
+  Programming mode supports conversion between common bases (binary, octal,
+  decimal, and hexadecimal), boolean algebra, one’s and two’s complementation,
+  character to character code conversion, and more.
+
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict
+base: core18
+
+slots:
+  # for GtkApplication registration
+  valuate:
+    interface: dbus
+    bus: session
+    name: org.x.valuate
+
+apps:
+  valuate:
+    command: usr/bin/valuate
+    extensions: [gnome-3-34]
+    plugs:
+      - gsettings
+      - network
+    desktop: usr/share/applications/org.x.valuate.desktop
+    common-id: org.x.valuate.desktop
+    environment:
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/lib/valuate
+
+parts:
+  valuate:
+    source: .
+    plugin: meson
+    meson-parameters:
+      - --prefix=/snap/valuate/current/usr
+      - -Dvala_args="--vapidir=$SNAPCRAFT_STAGE/usr/share/vala/vapi"
+      - -Ddisable-introspection=true
+    organize:
+      snap/valuate/current/usr: usr
+    override-build: |
+      sed -i.bak -e "s|subdir('doc')||g" meson.build
+      sed -i.bak -e 's|Icon=org.x.valuate$|Icon=${SNAP}/meta/gui/org.x.valuate.svg|g' data/org.x.valuate.desktop.in
+      sed -i.bak -e 's|media: valuate_help_media|media: valuate_help_media, symlink_media: false|g' help/meson.build
+      snapcraftctl build
+      mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../src/data/icons/hicolor/scalable/apps/org.x.valuate.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
+    build-packages:
+      - desktop-file-utils
+      - gettext
+      - appstream-util
+      - intltool
+      - libxml2-dev
+      - libsoup2.4-dev
+      - libmpc-dev
+      - libmpfr-dev
+      - yelp-tools
+      - libgvc6
+    stage-packages:
+      - libfribidi0
+    prime:
+      - -usr/lib/valuate/libcalculator.a
+      - -usr/share/appdata
+      - -usr/share/vala
+      - -usr/lib/*/pkgconfig
+      - -usr/lib/*/libfribid*
+      - -usr/lib/*/libgtksourceview*
+      - -usr/lib/*/girepository-1.0
+
+  # Find files provided by the base and platform snap and ensure they aren't
+  # duplicated in this snap
+  cleanup:
+    after: [valuate]
+    plugin: nil
+    build-snaps: [core18, gtk-common-themes, gnome-3-34-1804]
+    override-prime: |
+      set -eux
+      for snap in "core18" "gtk-common-themes" "gnome-3-34-1804"; do
+        cd "/snap/$snap/current" && find . -type f,l -name *.so.* -exec rm -f "$SNAPCRAFT_PRIME/{}" \;
+      done

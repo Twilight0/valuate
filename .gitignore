@@ -1,0 +1,32 @@
+# Build directories
+build/
+src/build/
+pkg/
+valuate/
+
+# Package files
+*.pkg.tar.zst
+*.tar.gz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.o
+*.so
+*.so.*
+*.pyc
+__pycache__/
+
+# Meson build files
+meson-private/
+meson-logs/
+meson-info/
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja

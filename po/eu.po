@@ -1,0 +1,3269 @@
+# Basque translation for gnome-calculator.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andoni Sáenz de Santamaría Zabala <andonisz@ibercom.com>, 2003.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2010, 2011, 2013, 2014, 2015, 2016, 2017.
+# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2011.
+# Ibai Oihanguren Sala <ibai@oihanguren.com>, 2020.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2019, 2020, 2021.
+#
+msgid ""
+msgstr "Project-Id-Version: gnome-calculator master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-calculator/issues\n"
+"POT-Creation-Date: 2021-05-17 05:26+0000\n"
+"PO-Revision-Date: 2021-07-18 16:05+0100\n"
+"Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/org.gnome.Calculator.appdata.xml.in:7
+msgid "GNOME Calculator"
+msgstr "GNOMEren Kalkulagailua"
+
+#: data/org.gnome.Calculator.appdata.xml.in:8
+#: data/org.gnome.Calculator.desktop.in:4
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr "Egin kalkulu aritmetikoak, zientifikoak edo finantzarioak"
+
+#: data/org.gnome.Calculator.appdata.xml.in:10
+msgid ""
+"GNOME Calculator is an application that solves mathematical equations. "
+"Though it at first appears to be a simple calculator with only basic "
+"arithmetic operations, you can switch into Advanced, Financial, or "
+"Programming mode to find a surprising set of capabilities."
+msgstr "GNOMEren Kalkulagailuak matematikako ekuazioak ebazteko aplikazio bat da. Nahiz eta hasiera batean kalkulagailu xume bat (oinarrizko eragiketa aritmetikoekin) dirudi arren, Aurreratua, Finantzarioa edo Programazio modura alda zintezke gaitasun multzo harrigarri batekin aurkitzeko."
+
+#: data/org.gnome.Calculator.appdata.xml.in:16
+msgid ""
+"The Advanced calculator supports many operations, including: logarithms, "
+"factorials, trigonometric and hyperbolic functions, modulus division, "
+"complex numbers, random number generation, prime factorization and unit "
+"conversions."
+msgstr "Kalkulagailu aurreratuak eragiketa mota ugari onartzen ditu: logaritmoak, faktorialak, funtzio trigonometrikoak eta hiperbolikoak, zatiketen moduluak, zenbaki konplexuak, ausazko zenbakien sortzailea, zenbaki lehenen faktorizazioa eta unitateen bihurketak."
+
+#: data/org.gnome.Calculator.appdata.xml.in:22
+msgid ""
+"Financial mode supports several computations, including periodic interest "
+"rate, present and future value, double declining and straight line "
+"depreciation, and many others."
+msgstr "Modu finantzarioak hainbat kalkulu onartzen ditu, beste batzuen artean: interes-tasa periodikoa, egungo eta etorkizuneko balioa, faktore bikoitzeko amortizazio beherakorra eta amortizazio lineala."
+
+#: data/org.gnome.Calculator.appdata.xml.in:27
+msgid ""
+"Programming mode supports conversion between common bases (binary, octal, "
+"decimal, and hexadecimal), boolean algebra, one’s and two’s complementation, "
+"character to character code conversion, and more."
+msgstr "Programazioaren modak ohiko oinarrien (bitarra, zortzitarra, hamartarra eta hamaseitarra) arteko bihurketa, algebra lineala, bat eta biren osagarria, karakterez karaktereko kode bihurketa, eta gehiago onartzen ditu."
+
+#: data/org.gnome.Calculator.appdata.xml.in:36
+msgid "GNOME Calculator in Basic Mode"
+msgstr "GNOMEren Kalkulagailua oinarrizko moduan"
+
+#: data/org.gnome.Calculator.appdata.xml.in:40
+msgid "GNOME Calculator in Advanced Mode"
+msgstr "GNOMEren Kalkulagailua modu aurreratuan"
+
+#: data/org.gnome.Calculator.appdata.xml.in:44
+msgid "GNOME Calculator in Financial Mode"
+msgstr "GNOMEren Kalkulagailua modu finantzarioan"
+
+#: data/org.gnome.Calculator.appdata.xml.in:48
+msgid "GNOME Calculator in Programming Mode"
+msgstr "GNOMEren Kalkulagailua programazio moduan"
+
+#: data/org.gnome.Calculator.appdata.xml.in:59
+msgid "The GNOME Project"
+msgstr "GNOME proiektua"
+
+#. Program name in the about dialog
+#: data/org.gnome.Calculator.desktop.in:3 src/gnome-calculator.vala:81
+#: src/gnome-calculator.vala:350 src/ui/math-window.ui:108
+msgid "Calculator"
+msgstr "Kalkulagailua"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Calculator.desktop.in:6
+msgid "calculation;arithmetic;scientific;financial;"
+msgstr "kalkulua;aritmetikoa;zientifikoa;finantzarioa;"
+
+#: data/org.gnome.calculator.gschema.xml:25
+msgid "Accuracy value"
+msgstr "Zehaztasun-balioa"
+
+#: data/org.gnome.calculator.gschema.xml:26
+msgid "The number of digits displayed after the numeric point"
+msgstr "Zenbaki-puntuaren ondoren bistaratuko den digitu kopurua"
+
+#: data/org.gnome.calculator.gschema.xml:31
+msgid "Word size"
+msgstr "Hitz-tamaina"
+
+#: data/org.gnome.calculator.gschema.xml:32
+msgid "The size of the words used in bitwise operations"
+msgstr "Bit mailako eragiketetan erabiltzen diren hitzen tamaina"
+
+#: data/org.gnome.calculator.gschema.xml:37
+msgid "Numeric Base"
+msgstr "Zenbaki-oinarria"
+
+#: data/org.gnome.calculator.gschema.xml:38
+msgid "The numeric base"
+msgstr "Zenbaki-oinarria"
+
+#: data/org.gnome.calculator.gschema.xml:42
+msgid "Show Thousands Separators"
+msgstr "Erakutsi milakoen bereizlea"
+
+#: data/org.gnome.calculator.gschema.xml:43
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "Zenbaki handietan milakoen bereizleak erakutsi behar diren edo ez zehazten du."
+
+#: data/org.gnome.calculator.gschema.xml:47
+msgid "Show Trailing Zeroes"
+msgstr "Erakutsi amaierako zeroak"
+
+#: data/org.gnome.calculator.gschema.xml:48
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr "Bistaratzeko balioan zenbaki-puntuaren ondoren amaierako zerorik erakutsi behar den edo ez zehazten du."
+
+#: data/org.gnome.calculator.gschema.xml:52 src/ui/math-window.ui:56
+msgid "Number format"
+msgstr "Zenbakien formatua"
+
+#: data/org.gnome.calculator.gschema.xml:53
+msgid "The format to display numbers in"
+msgstr "Zenbakiak bistaratzeko formatua"
+
+#: data/org.gnome.calculator.gschema.xml:57
+msgid "Angle units"
+msgstr "Angelu-unitateak"
+
+#: data/org.gnome.calculator.gschema.xml:58
+msgid "The angle units to use"
+msgstr "Angeluen unitateak erabiltzeko"
+
+#: data/org.gnome.calculator.gschema.xml:62
+msgid "Currency update interval"
+msgstr "Dibisaren eguneratze-tartea"
+
+#: data/org.gnome.calculator.gschema.xml:63
+msgid ""
+"How often the currency exchange rates should be updated. A value of 0 means "
+"the currency exchange rates won't be fetched from the network at all."
+msgstr "Zenbatero eguneratuko diren dibisaren truke-tasak. Balio hori 0 bada, dibisaren truke-tasak ez dira atzituko saretik inoiz."
+
+#: data/org.gnome.calculator.gschema.xml:67
+msgid "Button mode"
+msgstr "Botoien modua"
+
+#: data/org.gnome.calculator.gschema.xml:68
+msgid "The button mode"
+msgstr "Botoien modua"
+
+#: data/org.gnome.calculator.gschema.xml:72
+msgid "Source currency"
+msgstr "Iturburuko dibisa"
+
+#: data/org.gnome.calculator.gschema.xml:73
+msgid "Currency of the current calculation"
+msgstr "Uneko kalkuluaren dibisa"
+
+#: data/org.gnome.calculator.gschema.xml:77
+msgid "Target currency"
+msgstr "Helburuko dibisa"
+
+#: data/org.gnome.calculator.gschema.xml:78
+msgid "Currency to convert the current calculation into"
+msgstr "Dibisa uneko kalkulua horra bihurtzeko"
+
+#: data/org.gnome.calculator.gschema.xml:82
+msgid "Source units"
+msgstr "Iturburuko unitateak"
+
+#: data/org.gnome.calculator.gschema.xml:83
+msgid "Units of the current calculation"
+msgstr "Uneko kalkuluaren unitateak"
+
+#: data/org.gnome.calculator.gschema.xml:87
+msgid "Target units"
+msgstr "Helburuko unitateak"
+
+#: data/org.gnome.calculator.gschema.xml:88
+msgid "Units to convert the current calculation into"
+msgstr "Unitateak uneko kalkulua horra bihurtzeko"
+
+#: data/org.gnome.calculator.gschema.xml:92
+msgid "Internal precision"
+msgstr "Barneko doitasuna"
+
+#: data/org.gnome.calculator.gschema.xml:93
+msgid "The internal precision used with the MPFR library"
+msgstr "MPFR liburutegiarekin erabilitako barneko doitasuna"
+
+#: data/org.gnome.calculator.gschema.xml:97
+msgid "Window position"
+msgstr "Leihoaren posizioa"
+
+#: data/org.gnome.calculator.gschema.xml:98
+msgid "Window position (x and y) of the last closed window."
+msgstr "Itxitako azken leihoaren posizioa (x eta y)."
+
+#: lib/currency.vala:55
+msgid "UAE Dirham"
+msgstr "Dirham emirerribatuarra"
+
+#: lib/currency.vala:56
+msgid "Australian Dollar"
+msgstr "Dolar australiarra"
+
+#: lib/currency.vala:57
+msgid "Bangladeshi Taka"
+msgstr "Taka bengalarra"
+
+#: lib/currency.vala:58
+msgid "Bulgarian Lev"
+msgstr "Lev bulgariarra"
+
+#: lib/currency.vala:59
+msgid "Bahraini Dinar"
+msgstr "Dinar bahraindarra"
+
+#: lib/currency.vala:60
+msgid "Brunei Dollar"
+msgstr "Dolar bruneitarra"
+
+#: lib/currency.vala:61
+msgid "Brazilian Real"
+msgstr "Real brasildarra"
+
+#: lib/currency.vala:62
+msgid "Botswana Pula"
+msgstr "Pula botswanarra"
+
+#: lib/currency.vala:63
+msgid "Canadian Dollar"
+msgstr "Dolar kanadiarra"
+
+#: lib/currency.vala:64
+msgid "CFA Franc"
+msgstr "CFA frankoa"
+
+#: lib/currency.vala:65
+msgid "Swiss Franc"
+msgstr "Franko suitzarra"
+
+#: lib/currency.vala:66
+msgid "Chilean Peso"
+msgstr "Peso txiletarra"
+
+#: lib/currency.vala:67
+msgid "Chinese Yuan"
+msgstr "Yuan txinatarra"
+
+#: lib/currency.vala:68
+msgid "Colombian Peso"
+msgstr "Peso kolonbiarra"
+
+#: lib/currency.vala:69
+msgid "Czech Koruna"
+msgstr "Koroa txekiarra"
+
+#: lib/currency.vala:70
+msgid "Danish Krone"
+msgstr "Koroa danimarkarra"
+
+#: lib/currency.vala:71
+msgid "Algerian Dinar"
+msgstr "Dinar aljeriarra"
+
+#: lib/currency.vala:72
+msgid "Estonian Kroon"
+msgstr "Koroa estoniarra"
+
+#: lib/currency.vala:73
+msgid "Euro"
+msgstr "Euroa"
+
+#: lib/currency.vala:74
+msgid "British Pound Sterling"
+msgstr "Britainiako libera esterlina"
+
+#: lib/currency.vala:75
+msgid "Hong Kong Dollar"
+msgstr "Hong Kong-eko dolarra"
+
+#: lib/currency.vala:76
+msgid "Croatian Kuna"
+msgstr "Kuna kroaziarra"
+
+#: lib/currency.vala:77
+msgid "Hungarian Forint"
+msgstr "Forint hungariarra"
+
+#: lib/currency.vala:78
+msgid "Indonesian Rupiah"
+msgstr "Errupia indonesiarra"
+
+#: lib/currency.vala:79
+msgid "Israeli New Shekel"
+msgstr "Shekel berri israeldarra"
+
+#: lib/currency.vala:80
+msgid "Indian Rupee"
+msgstr "Errupia indiarra"
+
+#: lib/currency.vala:81
+msgid "Iranian Rial"
+msgstr "Erreal iraniarra"
+
+#: lib/currency.vala:82
+msgid "Icelandic Krona"
+msgstr "Koroa islandiarra"
+
+#: lib/currency.vala:83
+msgid "Japanese Yen"
+msgstr "Yen japoniarra"
+
+#: lib/currency.vala:84
+msgid "South Korean Won"
+msgstr "Won hegokorearra"
+
+#: lib/currency.vala:85
+msgid "Kuwaiti Dinar"
+msgstr "Dinar kuwaitarra"
+
+#: lib/currency.vala:86
+msgid "Kazakhstani Tenge"
+msgstr "Tenge kazakhstandarra"
+
+#: lib/currency.vala:87
+msgid "Sri Lankan Rupee"
+msgstr "Errupia srilankarra"
+
+#: lib/currency.vala:88
+msgid "Libyan Dinar"
+msgstr "Dinar libiarra"
+
+#: lib/currency.vala:89
+msgid "Mauritian Rupee"
+msgstr "Errupia mauriziarra"
+
+#: lib/currency.vala:90
+msgid "Mexican Peso"
+msgstr "Peso mexikarra"
+
+#: lib/currency.vala:91
+msgid "Malaysian Ringgit"
+msgstr "Ringgit malaysiarra"
+
+#: lib/currency.vala:92
+msgid "Norwegian Krone"
+msgstr "Koroa norvegiarra"
+
+#: lib/currency.vala:93
+msgid "Nepalese Rupee"
+msgstr "Errupia nepaldarra"
+
+#: lib/currency.vala:94
+msgid "New Zealand Dollar"
+msgstr "Dolar zeelandaberritarra"
+
+#: lib/currency.vala:95
+msgid "Omani Rial"
+msgstr "Erreal omanitarra"
+
+#: lib/currency.vala:96
+msgid "Peruvian Nuevo Sol"
+msgstr "Nuevo Sol peruarra"
+
+#: lib/currency.vala:97
+msgid "Philippine Peso"
+msgstr "Peso filipinarra"
+
+#: lib/currency.vala:98
+msgid "Pakistani Rupee"
+msgstr "Errupia pakistandarra"
+
+#: lib/currency.vala:99
+msgid "Polish Zloty"
+msgstr "Zloty poloniarra"
+
+#: lib/currency.vala:100
+msgid "Qatari Riyal"
+msgstr "Rial katartarra"
+
+#: lib/currency.vala:101
+msgid "New Romanian Leu"
+msgstr "Leu errumaniarra (berria)"
+
+#: lib/currency.vala:102
+msgid "Russian Rouble"
+msgstr "Errublo errusiarra"
+
+#: lib/currency.vala:103
+msgid "Saudi Riyal"
+msgstr "Rial saudiarabiarra"
+
+#: lib/currency.vala:104
+msgid "Serbian Dinar"
+msgstr "Dinar serbiarra"
+
+#: lib/currency.vala:105
+msgid "Swedish Krona"
+msgstr "Koroa suediarra"
+
+#: lib/currency.vala:106
+msgid "Singapore Dollar"
+msgstr "Dolar singapurtarra"
+
+#: lib/currency.vala:107
+msgid "Thai Baht"
+msgstr "Baht tailandiarra"
+
+#: lib/currency.vala:108
+msgid "Tunisian Dinar"
+msgstr "Dinar tunisiarra"
+
+#: lib/currency.vala:109
+msgid "Turkish Lira"
+msgstr "Lira turkiarra"
+
+#: lib/currency.vala:110
+msgid "T&T Dollar (TTD)"
+msgstr "Trinidad eta Tobagoko dolarra (TTD)"
+
+#: lib/currency.vala:111
+msgid "US Dollar"
+msgstr "Dolar estatubatuarra"
+
+#: lib/currency.vala:112
+msgid "Uruguayan Peso"
+msgstr "Peso uruguaitarra"
+
+#: lib/currency.vala:113
+msgid "Venezuelan Bolívar"
+msgstr "Bolivar venezuelarra"
+
+#: lib/currency.vala:114
+msgid "South African Rand"
+msgstr "Rand hegoafrikarra"
+
+#. Translators: conversion keyword, used e.g. 1 EUR in USD, 1 EUR to USD
+#: lib/equation-lexer.vala:729 src/math-converter.vala:270
+msgid "in"
+msgstr "hemen"
+
+#: lib/equation-lexer.vala:729
+msgid "to"
+msgstr "-"
+
+#: lib/equation-parser.vala:735 lib/number.vala:434
+msgid "The zeroth root of a number is undefined"
+msgstr "Zenbaki baten 'erro zero' ez dago definituta"
+
+#: lib/financial.vala:114
+msgid "Error: the number of periods must be positive"
+msgstr "Errorea: denboraldien kopurua positiboa izan behar du"
+
+#. Digits localized for the given language
+#: lib/math-equation.vala:173
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+
+#. Error shown when trying to undo with no undo history
+#: lib/math-equation.vala:525
+msgid "No undo history"
+msgstr "Ez dago desegiteko historiarik"
+
+#. Error shown when trying to redo with no redo history
+#: lib/math-equation.vala:546
+msgid "No redo history"
+msgstr "Ez dago desegiteko historiarik"
+
+#: lib/math-equation.vala:777
+msgid "No sane value to store"
+msgstr "Ez dago zentzuzko baliorik biltegiratzeko"
+
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: lib/math-equation.vala:1038
+msgid "Overflow. Try a bigger word size"
+msgstr "Gainezkatzea. Saiatu hitz-tamaina handiago batekin"
+
+#. Error displayed to user when they an unknown variable is entered
+#: lib/math-equation.vala:1043
+#, c-format
+msgid "Unknown variable “%s”"
+msgstr "Aldagai ezezaguna: ”%s”"
+
+#. Error displayed to user when an unknown function is entered
+#: lib/math-equation.vala:1050
+#, c-format
+msgid "Function “%s” is not defined"
+msgstr "”%s” funtzioa ez dago definituta"
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: lib/math-equation.vala:1057
+msgid "Unknown conversion"
+msgstr "Bihurketa ezezaguna"
+
+#. should always be run
+#: lib/math-equation.vala:1067
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. Unknown error.
+#. Error displayed to user when they enter an invalid calculation
+#: lib/math-equation.vala:1072 lib/math-equation.vala:1077
+msgid "Malformed expression"
+msgstr "Hondatutako adierazpena"
+
+#: lib/math-equation.vala:1088
+msgid "Calculating"
+msgstr "Kalkulatzen"
+
+#. Error displayed when trying to factorize a non-integer value
+#: lib/math-equation.vala:1281
+msgid "Need an integer to factorize"
+msgstr "Osoko zenbaki bat behar da faktorizatzeko"
+
+#. This message is displayed in the status bar when a bit shift operation is performed and the display does not contain a number
+#: lib/math-equation.vala:1345
+msgid "No sane value to bitwise shift"
+msgstr "Ez dago zentzuzko baliorik bit mailan desplazatzeko"
+
+#. Message displayed when cannot toggle bit in display
+#: lib/math-equation.vala:1367
+msgid "Displayed value not an integer"
+msgstr "Bistaratutako balioa ez da osoko bat"
+
+#. Translators: Error displayed when underflow error occured
+#: lib/number.vala:201
+msgid "Underflow error"
+msgstr "Gainezkatze negatiboaren errorea"
+
+#. Translators: Error displayed when overflow error occured
+#: lib/number.vala:206
+msgid "Overflow error"
+msgstr "Gainezkatzearen errorea"
+
+#. Translators: Error display when attempting to take argument of zero
+#: lib/number.vala:256
+msgid "Argument not defined for zero"
+msgstr "Argumentua ez dago definituta zero zenbakiarentzako"
+
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#: lib/number.vala:372 lib/number.vala:402
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "Zeroren berretura ez dago definituta berretzaile negatibo batentzat"
+
+#. Translators: Error displayed when attempted to raise 0 to power of zero
+#: lib/number.vala:380 lib/number.vala:410
+msgid "Zero raised to zero is undefined"
+msgstr "Zero ber zero ez dago definituta"
+
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: lib/number.vala:464 lib/number.vala:495
+msgid "Logarithm of zero is undefined"
+msgstr "Zeroren logaritmoa ez dago definituta"
+
+#. Translators: Error displayed when attempted take the factorial of a negative or complex number
+#: lib/number.vala:517
+msgid "Factorial is only defined for non-negative real numbers"
+msgstr "Faktoriala zenbaki erreal ez-negatiboentzat bakarrik dago definituta"
+
+#. Translators: Error displayed attempted to divide by zero
+#: lib/number.vala:577
+msgid "Division by zero is undefined"
+msgstr "Zati zero egitea ez dago definituta"
+
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: lib/number.vala:598
+msgid "Modulus division is only defined for integers"
+msgstr "Modulu-zatiketa osoko zenbakientzat bakarrik dago definituta"
+
+#. Translators: Error displayed when tangent value is undefined
+#: lib/number.vala:671
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr "Tangentea ez dago definituta π∕2 (90°)ren π (180°)(r)en multiploak diren angeluentzat"
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: lib/number.vala:690
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr "Arku sinua ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
+
+#. Translators: Error displayed when inverse cosine value is undefined
+#: lib/number.vala:707
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr "Arku kosinua ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
+
+#. Translators: Error displayed when trying to calculate undefined atan(i) or atan (-i)
+#: lib/number.vala:725
+msgid "Arctangent function is undefined for values i and -i"
+msgstr "Arku tangentea ez dago definituta i eta -i balioetarako"
+
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: lib/number.vala:775
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
+msgstr "Arku kosinu hiperbolikoa ez dago definituta 1en baino txikiagoak diren balioentzat"
+
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: lib/number.vala:791
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr "Arku tangente hiperbolikoa ez dago definituta [-1, 1] bitartetik kanpoko balioentzat"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: lib/number.vala:807
+msgid "Boolean AND is only defined for positive integers"
+msgstr "AND boolearra osoko positiboentzat bakarrik dago definituta"
+
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: lib/number.vala:819
+msgid "Boolean OR is only defined for positive integers"
+msgstr "OR boolearra osoko positiboentzat bakarrik dago definituta"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: lib/number.vala:831
+msgid "Boolean XOR is only defined for positive integers"
+msgstr "XOR boolearra osoko positiboentzat bakarrik dago definituta"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: lib/number.vala:843
+msgid "Boolean NOT is only defined for positive integers"
+msgstr "NOT boolearra osoko positiboentzat bakarrik dago definituta"
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: lib/number.vala:866
+msgid "Shift is only possible on integer values"
+msgstr "Desplazamendua osoko balioekin bakarrik erabil daiteke"
+
+#: lib/serializer.vala:345
+msgid "Overflow: the result couldn’t be calculated"
+msgstr "Gainezkatzea: ezin izan da emaitza kalkulatu"
+
+#: lib/unit.vala:29
+msgid "Angle"
+msgstr "Angelua"
+
+#: lib/unit.vala:30
+msgid "Length"
+msgstr "Luzera"
+
+#: lib/unit.vala:31
+msgid "Speed"
+msgstr "Abiadura"
+
+#: lib/unit.vala:32
+msgid "Area"
+msgstr "Area"
+
+#: lib/unit.vala:33
+msgid "Volume"
+msgstr "Bolumena"
+
+#: lib/unit.vala:34
+msgid "Mass"
+msgstr "Masa"
+
+#: lib/unit.vala:35
+msgid "Duration"
+msgstr "Iraupena"
+
+#: lib/unit.vala:36
+msgid "Frequency"
+msgstr "Maiztasuna"
+
+#: lib/unit.vala:37
+msgid "Temperature"
+msgstr "Tenperatura"
+
+#: lib/unit.vala:38
+msgid "Digital Storage"
+msgstr "Biltegi digitala"
+
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: lib/unit.vala:41 src/math-preferences.vala:20
+msgid "Degrees"
+msgstr "Graduak"
+
+#: lib/unit.vala:41
+#, c-format
+msgctxt "unit-format"
+msgid "%s degrees"
+msgstr "%s gradu"
+
+#: lib/unit.vala:41
+msgctxt "unit-symbols"
+msgid "degree,degrees,deg"
+msgstr "gradu,graduak"
+
+#: lib/unit.vala:42 src/math-preferences.vala:19
+msgid "Radians"
+msgstr "Radianak"
+
+#: lib/unit.vala:42
+#, c-format
+msgctxt "unit-format"
+msgid "%s radians"
+msgstr "%s radian"
+
+#: lib/unit.vala:42
+msgctxt "unit-symbols"
+msgid "radian,radians,rad"
+msgstr "radian,radianak,rad"
+
+#: lib/unit.vala:43 src/math-preferences.vala:21
+msgid "Gradians"
+msgstr "Gradianak"
+
+#: lib/unit.vala:43
+#, c-format
+msgctxt "unit-format"
+msgid "%s gradians"
+msgstr "%s gradian"
+
+#: lib/unit.vala:43
+msgctxt "unit-symbols"
+msgid "gradian,gradians,grad"
+msgstr "gradian,gradianak,grad"
+
+#: lib/unit.vala:44
+msgid "Parsecs"
+msgstr "Parsec-ak"
+
+#: lib/unit.vala:44
+#, c-format
+msgctxt "unit-format"
+msgid "%s pc"
+msgstr "%s pc"
+
+#: lib/unit.vala:44
+msgctxt "unit-symbols"
+msgid "parsec,parsecs,pc"
+msgstr "parsec,parsec-ak,pc"
+
+#: lib/unit.vala:45
+msgid "Light Years"
+msgstr "Argi-urteak"
+
+#: lib/unit.vala:45
+#, c-format
+msgctxt "unit-format"
+msgid "%s ly"
+msgstr "%s a.u."
+
+#: lib/unit.vala:45
+msgctxt "unit-symbols"
+msgid "lightyear,lightyears,ly"
+msgstr "argi-urte,argi-urteak,a.u."
+
+#: lib/unit.vala:46
+msgid "Astronomical Units"
+msgstr "Unitate astronomikoak"
+
+#: lib/unit.vala:46
+#, c-format
+msgctxt "unit-format"
+msgid "%s au"
+msgstr "%s ua"
+
+#: lib/unit.vala:46
+msgctxt "unit-symbols"
+msgid "au"
+msgstr "ua"
+
+#: lib/unit.vala:47
+msgid "Rack Units"
+msgstr "Rack unitateak"
+
+#: lib/unit.vala:47
+#, c-format
+msgctxt "unit-format"
+msgid "%sU"
+msgstr "%sU"
+
+#: lib/unit.vala:47
+msgctxt "unit-symbols"
+msgid "U"
+msgstr "U"
+
+#: lib/unit.vala:48
+msgid "Nautical Miles"
+msgstr "Itsas miliak"
+
+#: lib/unit.vala:48
+#, c-format
+msgctxt "unit-format"
+msgid "%s nmi"
+msgstr "%s nmi"
+
+#: lib/unit.vala:48
+msgctxt "unit-symbols"
+msgid "nmi"
+msgstr "nmi"
+
+#: lib/unit.vala:49
+msgid "Miles"
+msgstr "Miliak"
+
+#: lib/unit.vala:49
+#, c-format
+msgctxt "unit-format"
+msgid "%s mi"
+msgstr "%s mi"
+
+#: lib/unit.vala:49
+msgctxt "unit-symbols"
+msgid "mile,miles,mi"
+msgstr "milia,miliak,mi"
+
+#: lib/unit.vala:50
+msgid "Kilometers"
+msgstr "Kilometroak"
+
+#: lib/unit.vala:50
+#, c-format
+msgctxt "unit-format"
+msgid "%s km"
+msgstr "%s km"
+
+#: lib/unit.vala:50
+msgctxt "unit-symbols"
+msgid "kilometer,kilometers,km,kms"
+msgstr "kilometro,kilometroak,km"
+
+#: lib/unit.vala:51
+msgid "Cables"
+msgstr "Kableak"
+
+#: lib/unit.vala:51
+#, c-format
+msgctxt "unit-format"
+msgid "%s cb"
+msgstr "%s cb"
+
+#: lib/unit.vala:51
+msgctxt "unit-symbols"
+msgid "cable,cables,cb"
+msgstr "kable,kableak,cb"
+
+#: lib/unit.vala:52
+msgid "Fathoms"
+msgstr "Brazak"
+
+#: lib/unit.vala:52
+#, c-format
+msgctxt "unit-format"
+msgid "%s ftm"
+msgstr "%s ftm"
+
+#: lib/unit.vala:52
+msgctxt "unit-symbols"
+msgid "fathom,fathoms,ftm"
+msgstr "braza,brazak,ftm"
+
+#: lib/unit.vala:53
+msgid "Meters"
+msgstr "Metroak"
+
+#: lib/unit.vala:53
+#, c-format
+msgctxt "unit-format"
+msgid "%s m"
+msgstr "%s m"
+
+#: lib/unit.vala:53
+msgctxt "unit-symbols"
+msgid "meter,meters,m"
+msgstr "metro,metroak,m"
+
+#: lib/unit.vala:54
+msgid "Yards"
+msgstr "Yardak"
+
+#: lib/unit.vala:54
+#, c-format
+msgctxt "unit-format"
+msgid "%s yd"
+msgstr "%s yd"
+
+#: lib/unit.vala:54
+msgctxt "unit-symbols"
+msgid "yard,yards,yd"
+msgstr "yarda,yardak,yd"
+
+#: lib/unit.vala:55
+msgid "Feet"
+msgstr "Oinak"
+
+#: lib/unit.vala:55
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft"
+msgstr "%s ft"
+
+#: lib/unit.vala:55
+msgctxt "unit-symbols"
+msgid "foot,feet,ft"
+msgstr "oin,oinak,ft"
+
+#: lib/unit.vala:56
+msgid "Inches"
+msgstr "Hazbeteak"
+
+#: lib/unit.vala:56
+#, c-format
+msgctxt "unit-format"
+msgid "%s in"
+msgstr "%s in"
+
+#: lib/unit.vala:56
+msgctxt "unit-symbols"
+msgid "inch,inches,in"
+msgstr "hazbete,hazbeteak,in"
+
+#: lib/unit.vala:57
+msgid "Centimeters"
+msgstr "Zentimetroak"
+
+#: lib/unit.vala:57
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm"
+msgstr "%s cm"
+
+#: lib/unit.vala:57
+msgctxt "unit-symbols"
+msgid "centimeter,centimeters,cm,cms"
+msgstr "zentimetro,zentimetroak,cm"
+
+#: lib/unit.vala:58
+msgid "Millimeters"
+msgstr "Milimetroak"
+
+#: lib/unit.vala:58
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm"
+msgstr "%s mm"
+
+#: lib/unit.vala:58
+msgctxt "unit-symbols"
+msgid "millimeter,millimeters,mm"
+msgstr "milimetro,milimetroak,mm"
+
+#: lib/unit.vala:59
+msgid "Micrometers"
+msgstr "Mikrometroak"
+
+#: lib/unit.vala:59
+#, c-format
+msgctxt "unit-format"
+msgid "%s μm"
+msgstr "%s μm"
+
+#: lib/unit.vala:59
+msgctxt "unit-symbols"
+msgid "micrometer,micrometers,um"
+msgstr "mikrometro,mikrometroak,um"
+
+#: lib/unit.vala:60
+msgid "Nanometers"
+msgstr "Nanometroak"
+
+#: lib/unit.vala:60
+#, c-format
+msgctxt "unit-format"
+msgid "%s nm"
+msgstr "%s nm"
+
+#: lib/unit.vala:60
+msgctxt "unit-symbols"
+msgid "nanometer,nanometers,nm"
+msgstr "nanometro,nanometroak,nm"
+
+#: lib/unit.vala:61
+msgid "Desktop Publishing Point"
+msgstr "Mahaigainaren argitalpenaren puntua"
+
+#: lib/unit.vala:61 lib/unit.vala:77
+#, c-format
+msgctxt "unit-format"
+msgid "%s pt"
+msgstr "%s pt"
+
+#: lib/unit.vala:61
+msgctxt "unit-symbols"
+msgid "point,pt,points,pts"
+msgstr "puntua,pt,puntuak,pts"
+
+#: lib/unit.vala:62
+msgid "Kilometers per hour"
+msgstr "Kilometroak orduko"
+
+#: lib/unit.vala:62
+#, c-format
+msgctxt "unit-format"
+msgid "%s km/h"
+msgstr "%s km/h"
+
+#: lib/unit.vala:62
+msgctxt "unit-symbols"
+msgid "kilometers per hour,kmph,kmh,kph"
+msgstr "kilometroak orduko,kmph,kmh,kph"
+
+#: lib/unit.vala:63
+msgid "Miles per hour"
+msgstr "Miliak orduko"
+
+#: lib/unit.vala:63
+#, c-format
+msgctxt "unit-format"
+msgid "%s miles/h"
+msgstr "%s milia/h"
+
+#: lib/unit.vala:63
+msgctxt "unit-symbols"
+msgid "milesph,miles per hour,mi/h,miph,mph"
+msgstr "miliakorduko,miliak orduko,mi/h,miph,mph"
+
+#: lib/unit.vala:64
+msgid "Meters per second"
+msgstr "Metroak segundoko"
+
+#: lib/unit.vala:64
+#, c-format
+msgctxt "unit-format"
+msgid "%s m/s"
+msgstr "%s m/s"
+
+#: lib/unit.vala:64
+msgctxt "unit-symbols"
+msgid "meters per second,mps"
+msgstr "metroak segundoko, mps"
+
+#: lib/unit.vala:65
+msgid "Feet per second"
+msgstr "Oinak segundoko"
+
+#: lib/unit.vala:65
+#, c-format
+msgctxt "unit-format"
+msgid "%s feet/s"
+msgstr "%s oin/s"
+
+#: lib/unit.vala:65
+msgctxt "unit-symbols"
+msgid "fps,feet per second,feetps"
+msgstr "fps,oina segundoko,feetps"
+
+#: lib/unit.vala:66
+msgid "Knots"
+msgstr "Korapiloak"
+
+#: lib/unit.vala:66
+#, c-format
+msgctxt "unit-format"
+msgid "%s kt"
+msgstr "%s kt"
+
+#: lib/unit.vala:66
+msgctxt "unit-symbols"
+msgid "kt,kn,nd,knot,knots"
+msgstr "kt,kn,nd,korapiloa,korapiloak"
+
+#: lib/unit.vala:67
+msgid "Hectares"
+msgstr "Hektareak"
+
+#: lib/unit.vala:67
+#, c-format
+msgctxt "unit-format"
+msgid "%s ha"
+msgstr "%s ha"
+
+#: lib/unit.vala:67
+msgctxt "unit-symbols"
+msgid "hectare,hectares,ha"
+msgstr "hektarea,hektareak,ha"
+
+#: lib/unit.vala:68
+msgid "Acres"
+msgstr "Akreak"
+
+#: lib/unit.vala:68
+#, c-format
+msgctxt "unit-format"
+msgid "%s acres"
+msgstr "%s akreak"
+
+#: lib/unit.vala:68
+msgctxt "unit-symbols"
+msgid "acre,acres"
+msgstr "akre,akreak"
+
+#: lib/unit.vala:69
+msgid "Square Foot"
+msgstr "Oin karratuak"
+
+#: lib/unit.vala:69
+#, c-format
+msgctxt "unit-format"
+msgid "%s ft²"
+msgstr "%s ft²"
+
+#: lib/unit.vala:69
+msgctxt "unit-symbols"
+msgid "ft²"
+msgstr "ft²"
+
+#: lib/unit.vala:70
+msgid "Square Meters"
+msgstr "Metro karratuak"
+
+#: lib/unit.vala:70
+#, c-format
+msgctxt "unit-format"
+msgid "%s m²"
+msgstr "%s m²"
+
+#: lib/unit.vala:70
+msgctxt "unit-symbols"
+msgid "m²"
+msgstr "m²"
+
+#: lib/unit.vala:71
+msgid "Square Centimeters"
+msgstr "Zentimetro karratuak"
+
+#: lib/unit.vala:71
+#, c-format
+msgctxt "unit-format"
+msgid "%s cm²"
+msgstr "%s cm²"
+
+#: lib/unit.vala:71
+msgctxt "unit-symbols"
+msgid "cm²"
+msgstr "cm²"
+
+#: lib/unit.vala:72
+msgid "Square Millimeters"
+msgstr "Milimetro karratuak"
+
+#: lib/unit.vala:72
+#, c-format
+msgctxt "unit-format"
+msgid "%s mm²"
+msgstr "%s mm²"
+
+#: lib/unit.vala:72
+msgctxt "unit-symbols"
+msgid "mm²"
+msgstr "mm²"
+
+#: lib/unit.vala:73
+msgid "Cubic Meters"
+msgstr "Metro kubikoak"
+
+#: lib/unit.vala:73
+#, c-format
+msgctxt "unit-format"
+msgid "%s m³"
+msgstr "%s m³"
+
+#: lib/unit.vala:73
+msgctxt "unit-symbols"
+msgid "m³"
+msgstr "m³"
+
+#: lib/unit.vala:74
+msgid "US Gallons"
+msgstr "AEBko galoiak"
+
+#: lib/unit.vala:74
+#, c-format
+msgctxt "unit-format"
+msgid "%s gal"
+msgstr "%s gal"
+
+#: lib/unit.vala:74
+msgctxt "unit-symbols"
+msgid "gallon,gallons,gal"
+msgstr "galoi,galoiak,gal"
+
+#: lib/unit.vala:75
+msgid "Liters"
+msgstr "Litroak"
+
+#: lib/unit.vala:75
+#, c-format
+msgctxt "unit-format"
+msgid "%s L"
+msgstr "%s L"
+
+#: lib/unit.vala:75
+msgctxt "unit-symbols"
+msgid "litre,litres,liter,liters,L"
+msgstr "litro,litroak,l"
+
+#: lib/unit.vala:76
+msgid "US Quarts"
+msgstr "AEBko laurdenak"
+
+#: lib/unit.vala:76
+#, c-format
+msgctxt "unit-format"
+msgid "%s qt"
+msgstr "%s qt"
+
+#: lib/unit.vala:76
+msgctxt "unit-symbols"
+msgid "quart,quarts,qt"
+msgstr "laurdena,laurdenak,qt"
+
+#: lib/unit.vala:77
+msgid "US Pints"
+msgstr "AEBko pintak"
+
+#: lib/unit.vala:77
+msgctxt "unit-symbols"
+msgid "pint,pints,pt"
+msgstr "pinta,pintak,pt"
+
+#: lib/unit.vala:78
+msgid "Metric Cups"
+msgstr "Kopa metrikoak"
+
+#: lib/unit.vala:78
+#, c-format
+msgctxt "unit-format"
+msgid "%s cup"
+msgstr "%s kopa"
+
+#: lib/unit.vala:78
+msgctxt "unit-symbols"
+msgid "cup,cups,cp"
+msgstr "kopa,kopak,cp"
+
+#: lib/unit.vala:79
+msgid "Milliliters"
+msgstr "Mililitroak"
+
+#: lib/unit.vala:79
+#, c-format
+msgctxt "unit-format"
+msgid "%s mL"
+msgstr "%s mL"
+
+#: lib/unit.vala:79
+msgctxt "unit-symbols"
+msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+msgstr "mililitro,mililitroak,mL,cm³"
+
+#: lib/unit.vala:80
+msgid "Microliters"
+msgstr "Mikrolitroak"
+
+#: lib/unit.vala:80
+#, c-format
+msgctxt "unit-format"
+msgid "%s μL"
+msgstr "%s μL"
+
+#: lib/unit.vala:80
+msgctxt "unit-symbols"
+msgid "mm³,μL,uL"
+msgstr "mm³,μL,uL"
+
+#: lib/unit.vala:81
+msgid "Tonnes"
+msgstr "Tonak"
+
+#: lib/unit.vala:81
+#, c-format
+msgctxt "unit-format"
+msgid "%s T"
+msgstr "%s T"
+
+#: lib/unit.vala:81
+msgctxt "unit-symbols"
+msgid "tonne,tonnes"
+msgstr "tona,tonak"
+
+#: lib/unit.vala:82
+msgid "Kilograms"
+msgstr "Kilogramoak"
+
+#: lib/unit.vala:82
+#, c-format
+msgctxt "unit-format"
+msgid "%s kg"
+msgstr "%s kg"
+
+#: lib/unit.vala:82
+msgctxt "unit-symbols"
+msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+msgstr "kilogramo,kilogramoak,kg"
+
+#: lib/unit.vala:83
+msgid "Pounds"
+msgstr "Liberak"
+
+#: lib/unit.vala:83
+#, c-format
+msgctxt "unit-format"
+msgid "%s lb"
+msgstr "%s lb"
+
+#: lib/unit.vala:83
+msgctxt "unit-symbols"
+msgid "pound,pounds,lb,lbs"
+msgstr "libera,liberak,lb,lbs"
+
+#: lib/unit.vala:84
+msgid "Ounces"
+msgstr "Ontzak"
+
+#: lib/unit.vala:84
+#, c-format
+msgctxt "unit-format"
+msgid "%s oz"
+msgstr "%s oz"
+
+#: lib/unit.vala:84
+msgctxt "unit-symbols"
+msgid "ounce,ounces,oz"
+msgstr "ontza,ontzak,oz"
+
+#: lib/unit.vala:85
+msgid "Grams"
+msgstr "Gramoak"
+
+#: lib/unit.vala:85
+#, c-format
+msgctxt "unit-format"
+msgid "%s g"
+msgstr "%s g"
+
+#: lib/unit.vala:85
+msgctxt "unit-symbols"
+msgid "gram,grams,gramme,grammes,g"
+msgstr "gramo,gramoak,g"
+
+#: lib/unit.vala:86
+msgid "Stone"
+msgstr "Harria"
+
+#: lib/unit.vala:86
+#, c-format
+msgctxt "unit-format"
+msgid "%s st"
+msgstr "%s st"
+
+#: lib/unit.vala:86
+msgctxt "unit-symbols"
+msgid "stone,st,stones"
+msgstr "harria,st,harriak"
+
+#: lib/unit.vala:87
+msgid "Centuries"
+msgstr "Mendeak"
+
+#: lib/unit.vala:87
+#, c-format
+msgctxt "unit-format"
+msgid "%s centuries"
+msgstr "%s mende"
+
+#: lib/unit.vala:87
+msgctxt "unit-symbols"
+msgid "century,centuries"
+msgstr "mendea,mendeak"
+
+#: lib/unit.vala:88
+msgid "Decades"
+msgstr "Hamarkadak"
+
+#: lib/unit.vala:88
+#, c-format
+msgctxt "unit-format"
+msgid "%s decades"
+msgstr "%s hamarkada"
+
+#: lib/unit.vala:88
+msgctxt "unit-symbols"
+msgid "decade,decades"
+msgstr "hamarkada,hamarkadak"
+
+#: lib/unit.vala:89
+msgid "Years"
+msgstr "Urteak"
+
+#: lib/unit.vala:89
+#, c-format
+msgctxt "unit-format"
+msgid "%s years"
+msgstr "%s urte"
+
+#: lib/unit.vala:89
+msgctxt "unit-symbols"
+msgid "year,years"
+msgstr "urte,urteak"
+
+#: lib/unit.vala:90
+msgid "Months"
+msgstr "Hilabeteak"
+
+#: lib/unit.vala:90
+#, c-format
+msgctxt "unit-format"
+msgid "%s months"
+msgstr "%s hilabete"
+
+#: lib/unit.vala:90
+msgctxt "unit-symbols"
+msgid "month,months"
+msgstr "hilabetea,hilabeteak"
+
+#: lib/unit.vala:91
+msgid "Weeks"
+msgstr "Asteak"
+
+#: lib/unit.vala:91
+#, c-format
+msgctxt "unit-format"
+msgid "%s weeks"
+msgstr "%s aste"
+
+#: lib/unit.vala:91
+msgctxt "unit-symbols"
+msgid "week,weeks"
+msgstr "astea,asteak"
+
+#: lib/unit.vala:92
+msgid "Days"
+msgstr "Egunak"
+
+#: lib/unit.vala:92
+#, c-format
+msgctxt "unit-format"
+msgid "%s days"
+msgstr "%s egun"
+
+#: lib/unit.vala:92
+msgctxt "unit-symbols"
+msgid "day,days"
+msgstr "egun,egunak"
+
+#: lib/unit.vala:93
+msgid "Hours"
+msgstr "Orduak"
+
+#: lib/unit.vala:93
+#, c-format
+msgctxt "unit-format"
+msgid "%s hours"
+msgstr "%s ordu"
+
+#: lib/unit.vala:93
+msgctxt "unit-symbols"
+msgid "hour,hours"
+msgstr "ordu,orduak,o"
+
+#: lib/unit.vala:94
+msgid "Minutes"
+msgstr "Minutuak"
+
+#: lib/unit.vala:94
+#, c-format
+msgctxt "unit-format"
+msgid "%s minutes"
+msgstr "%s minutu"
+
+#: lib/unit.vala:94
+msgctxt "unit-symbols"
+msgid "minute,minutes"
+msgstr "minutu,minutuak,min"
+
+#: lib/unit.vala:95
+msgid "Seconds"
+msgstr "Segundoak"
+
+#: lib/unit.vala:95
+#, c-format
+msgctxt "unit-format"
+msgid "%s s"
+msgstr "%s s"
+
+#: lib/unit.vala:95
+msgctxt "unit-symbols"
+msgid "second,seconds,s"
+msgstr "segundo,segundoak,s"
+
+#: lib/unit.vala:96
+msgid "Milliseconds"
+msgstr "Milisegundoak"
+
+#: lib/unit.vala:96
+#, c-format
+msgctxt "unit-format"
+msgid "%s ms"
+msgstr "%s ms"
+
+#: lib/unit.vala:96
+msgctxt "unit-symbols"
+msgid "millisecond,milliseconds,ms"
+msgstr "milisegundo,milisegundoak,ms"
+
+#: lib/unit.vala:97
+msgid "Microseconds"
+msgstr "Mikrosegundoak"
+
+#: lib/unit.vala:97
+#, c-format
+msgctxt "unit-format"
+msgid "%s μs"
+msgstr "%s μs"
+
+#: lib/unit.vala:97
+msgctxt "unit-symbols"
+msgid "microsecond,microseconds,us,μs"
+msgstr "mikrosegundo,mikrosegundoak,us,μs"
+
+#: lib/unit.vala:98
+msgid "Celsius"
+msgstr "Celsius"
+
+#: lib/unit.vala:98
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚C"
+msgstr "%s ˚C"
+
+#: lib/unit.vala:98
+msgctxt "unit-symbols"
+msgid "degC,˚C,C,c,Celsius,celsius"
+msgstr "degC,˚C,C,c,Celsius,celsius"
+
+#: lib/unit.vala:99
+msgid "Fahrenheit"
+msgstr "Fahrenheit"
+
+#: lib/unit.vala:99
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚F"
+msgstr "%s ˚F"
+
+#: lib/unit.vala:99
+msgctxt "unit-symbols"
+msgid "degF,˚F,F,f,Fahrenheit,fahrenheit"
+msgstr "degF,˚F,F,f,Fahrenheit,fahrenheit"
+
+#: lib/unit.vala:100
+msgid "Kelvin"
+msgstr "Kelvin"
+
+#: lib/unit.vala:100
+#, c-format
+msgctxt "unit-format"
+msgid "%s K"
+msgstr "%s K"
+
+#: lib/unit.vala:100
+msgctxt "unit-symbols"
+msgid "k,K,Kelvin,kelvin"
+msgstr "k,K,Kelvin,kelvin"
+
+#: lib/unit.vala:101
+msgid "Rankine"
+msgstr "Rankine"
+
+#: lib/unit.vala:101
+#, c-format
+msgctxt "unit-format"
+msgid "%s ˚R"
+msgstr "%s ˚R"
+
+#: lib/unit.vala:101
+msgctxt "unit-symbols"
+msgid "degR,˚R,˚Ra,r,R,Rankine,rankine"
+msgstr "degR,˚R,˚Ra,r,R,Rankine,rankine"
+
+#. We use IEC prefix for digital storage units. i.e. 1 kB = 1 KiloByte = 1000 bytes, and 1 KiB = 1 kibiByte = 1024 bytes
+#: lib/unit.vala:103
+msgid "Bits"
+msgstr "Bitak"
+
+#: lib/unit.vala:103
+#, c-format
+msgctxt "unit-format"
+msgid "%s b"
+msgstr "%s b"
+
+#: lib/unit.vala:103
+msgctxt "unit-symbols"
+msgid "bit,bits,b"
+msgstr "bit, b"
+
+#: lib/unit.vala:104
+msgid "Bytes"
+msgstr "Byteak"
+
+#: lib/unit.vala:104
+#, c-format
+msgctxt "unit-format"
+msgid "%s B"
+msgstr "%s B"
+
+#: lib/unit.vala:104
+msgctxt "unit-symbols"
+msgid "byte,bytes,B"
+msgstr "byte,B"
+
+# unitatea dagoen horretan utzi da, ikus: http://es.wikipedia.org/wiki/Nibble
+#: lib/unit.vala:105
+msgid "Nibbles"
+msgstr "Nibbleak"
+
+#: lib/unit.vala:105
+#, c-format
+msgctxt "unit-format"
+msgid "%s nibble"
+msgstr "%s nibble"
+
+#: lib/unit.vala:105
+msgctxt "unit-symbols"
+msgid "nibble,nibbles"
+msgstr "nibble"
+
+#. The SI symbol for kilo is k, however we also allow "KB" and "Kb", as they are widely used and accepted.
+#: lib/unit.vala:107
+msgid "Kilobits"
+msgstr "Kilobitak"
+
+#: lib/unit.vala:107
+#, c-format
+msgctxt "unit-format"
+msgid "%s kb"
+msgstr "%s kb"
+
+#: lib/unit.vala:107
+msgctxt "unit-symbols"
+msgid "kilobit,kilobits,kb,Kb"
+msgstr "kilobit,kb,Kb"
+
+#: lib/unit.vala:108
+msgid "Kilobytes"
+msgstr "Kilobyteak"
+
+#: lib/unit.vala:108
+#, c-format
+msgctxt "unit-format"
+msgid "%s kB"
+msgstr "%s kB"
+
+#: lib/unit.vala:108
+msgctxt "unit-symbols"
+msgid "kilobyte,kilobytes,kB,KB"
+msgstr "kilobyte,kB,KB"
+
+#: lib/unit.vala:109
+msgid "Kibibits"
+msgstr "Kibibitak"
+
+#: lib/unit.vala:109
+#, c-format
+msgctxt "unit-format"
+msgid "%s Kib"
+msgstr "%s Kib"
+
+#: lib/unit.vala:109
+msgctxt "unit-symbols"
+msgid "kibibit,kibibits,Kib"
+msgstr "kibibit,Kib"
+
+#: lib/unit.vala:110
+msgid "Kibibytes"
+msgstr "Kibibyteak"
+
+#: lib/unit.vala:110
+#, c-format
+msgctxt "unit-format"
+msgid "%s KiB"
+msgstr "%s KiB"
+
+#: lib/unit.vala:110
+msgctxt "unit-symbols"
+msgid "kibibyte,kibibytes,KiB"
+msgstr "kibibyte,KiB"
+
+#: lib/unit.vala:111
+msgid "Megabits"
+msgstr "Megabitak"
+
+#: lib/unit.vala:111
+#, c-format
+msgctxt "unit-format"
+msgid "%s Mb"
+msgstr "%s Mb"
+
+#: lib/unit.vala:111
+msgctxt "unit-symbols"
+msgid "megabit,megabits,Mb"
+msgstr "megabit,Mb"
+
+#: lib/unit.vala:112
+msgid "Megabytes"
+msgstr "Megabyteak"
+
+#: lib/unit.vala:112
+#, c-format
+msgctxt "unit-format"
+msgid "%s MB"
+msgstr "%s MB"
+
+#: lib/unit.vala:112
+msgctxt "unit-symbols"
+msgid "megabyte,megabytes,MB"
+msgstr "megabyte,MB"
+
+#: lib/unit.vala:113
+msgid "Mebibits"
+msgstr "Mebibitak"
+
+#: lib/unit.vala:113
+#, c-format
+msgctxt "unit-format"
+msgid "%s Mib"
+msgstr "%s Mib"
+
+#: lib/unit.vala:113
+msgctxt "unit-symbols"
+msgid "mebibit,mebibits,Mib"
+msgstr "mebibit,Mib"
+
+#: lib/unit.vala:114
+msgid "Mebibytes"
+msgstr "Mebibyteak"
+
+#: lib/unit.vala:114
+#, c-format
+msgctxt "unit-format"
+msgid "%s MiB"
+msgstr "%s MiB"
+
+#: lib/unit.vala:114
+msgctxt "unit-symbols"
+msgid "mebibyte,mebibytes,MiB"
+msgstr "mebibyte,MiB"
+
+#: lib/unit.vala:115
+msgid "Gigabits"
+msgstr "Gigabitak"
+
+#: lib/unit.vala:115
+#, c-format
+msgctxt "unit-format"
+msgid "%s Gb"
+msgstr "%s Gb"
+
+#: lib/unit.vala:115
+msgctxt "unit-symbols"
+msgid "gigabit,gigabits,Gb"
+msgstr "gigabit,Gb"
+
+#: lib/unit.vala:116
+msgid "Gigabytes"
+msgstr "Gigabyteak"
+
+#: lib/unit.vala:116
+#, c-format
+msgctxt "unit-format"
+msgid "%s GB"
+msgstr "%s GB"
+
+#: lib/unit.vala:116
+msgctxt "unit-symbols"
+msgid "gigabyte,gigabytes,GB"
+msgstr "gigabyte,GB"
+
+#: lib/unit.vala:117
+msgid "Gibibits"
+msgstr "Gibibitak"
+
+#: lib/unit.vala:117
+#, c-format
+msgctxt "unit-format"
+msgid "%s Gib"
+msgstr "%s Gib"
+
+#: lib/unit.vala:117
+msgctxt "unit-symbols"
+msgid "gibibit,gibibits,Gib"
+msgstr "gibibit,Gib"
+
+#: lib/unit.vala:118
+msgid "Gibibytes"
+msgstr "Gibibyteak"
+
+#: lib/unit.vala:118
+#, c-format
+msgctxt "unit-format"
+msgid "%s GiB"
+msgstr "%s GiB"
+
+#: lib/unit.vala:118
+msgctxt "unit-symbols"
+msgid "gibibyte,gibibytes,GiB"
+msgstr "gibibyte,GiB"
+
+#: lib/unit.vala:119
+msgid "Terabits"
+msgstr "Terabitak"
+
+#: lib/unit.vala:119
+#, c-format
+msgctxt "unit-format"
+msgid "%s Tb"
+msgstr "%s Tb"
+
+#: lib/unit.vala:119
+msgctxt "unit-symbols"
+msgid "terabit,terabits,Tb"
+msgstr "terabit,Tb"
+
+#: lib/unit.vala:120
+msgid "Terabytes"
+msgstr "Terabyteak"
+
+#: lib/unit.vala:120
+#, c-format
+msgctxt "unit-format"
+msgid "%s TB"
+msgstr "%s TB"
+
+#: lib/unit.vala:120
+msgctxt "unit-symbols"
+msgid "terabyte,terabytes,TB"
+msgstr "terabyte,TB"
+
+#: lib/unit.vala:121
+msgid "Tebibits"
+msgstr "Tebibitak"
+
+#: lib/unit.vala:121
+#, c-format
+msgctxt "unit-format"
+msgid "%s Tib"
+msgstr "%s Tib"
+
+#: lib/unit.vala:121
+msgctxt "unit-symbols"
+msgid "tebibit,tebibits,Tib"
+msgstr "tebibit,Tib"
+
+#: lib/unit.vala:122
+msgid "Tebibytes"
+msgstr "Tebibyteak"
+
+#: lib/unit.vala:122
+#, c-format
+msgctxt "unit-format"
+msgid "%s TiB"
+msgstr "%s TiB"
+
+#: lib/unit.vala:122
+msgctxt "unit-symbols"
+msgid "tebibyte,tebibytes,TiB"
+msgstr "tebibyte,TiB"
+
+#: lib/unit.vala:123
+msgid "Petabits"
+msgstr "Petabitak"
+
+#: lib/unit.vala:123
+#, c-format
+msgctxt "unit-format"
+msgid "%s Pb"
+msgstr "%s Pb"
+
+#: lib/unit.vala:123
+msgctxt "unit-symbols"
+msgid "petabit,petabits,Pb"
+msgstr "petabit,Pb"
+
+#: lib/unit.vala:124
+msgid "Petabytes"
+msgstr "Petabyteak"
+
+#: lib/unit.vala:124
+#, c-format
+msgctxt "unit-format"
+msgid "%s PB"
+msgstr "%s PB"
+
+#: lib/unit.vala:124
+msgctxt "unit-symbols"
+msgid "petabyte,petabytes,PB"
+msgstr "petabyte,PB"
+
+#: lib/unit.vala:125
+msgid "Pebibits"
+msgstr "Pebibitak"
+
+#: lib/unit.vala:125
+#, c-format
+msgctxt "unit-format"
+msgid "%s Pib"
+msgstr "%s Pib"
+
+#: lib/unit.vala:125
+msgctxt "unit-symbols"
+msgid "pebibit,pebibits,Pib"
+msgstr "pebibit,Pib"
+
+#: lib/unit.vala:126
+msgid "Pebibytes"
+msgstr "Pebibyteak"
+
+#: lib/unit.vala:126
+#, c-format
+msgctxt "unit-format"
+msgid "%s PiB"
+msgstr "%s PiB"
+
+#: lib/unit.vala:126
+msgctxt "unit-symbols"
+msgid "pebibyte,pebibytes,PiB"
+msgstr "pebibyte,PiB"
+
+#: lib/unit.vala:127
+msgid "Exabits"
+msgstr "Exabitak"
+
+#: lib/unit.vala:127 lib/unit.vala:131
+#, c-format
+msgctxt "unit-format"
+msgid "%s Eb"
+msgstr "%s Eb"
+
+#: lib/unit.vala:127
+msgctxt "unit-symbols"
+msgid "exabit,exabits,Eb"
+msgstr "exabit,Eb"
+
+#: lib/unit.vala:128
+msgid "Exabytes"
+msgstr "Exabyteak"
+
+#: lib/unit.vala:128 lib/unit.vala:132
+#, c-format
+msgctxt "unit-format"
+msgid "%s EB"
+msgstr "%s EB"
+
+#: lib/unit.vala:128
+msgctxt "unit-symbols"
+msgid "exabyte,exabytes,EB"
+msgstr "exabyte,EB"
+
+#: lib/unit.vala:129
+msgid "Exbibits"
+msgstr "Exbibitak"
+
+#: lib/unit.vala:129
+#, c-format
+msgctxt "unit-format"
+msgid "%s Eib"
+msgstr "%s Eib"
+
+#: lib/unit.vala:129
+msgctxt "unit-symbols"
+msgid "exbibit,exbibits,Eib"
+msgstr "exbibit,Eib"
+
+#: lib/unit.vala:130
+msgid "Exbibytes"
+msgstr "Exbibyteak"
+
+#: lib/unit.vala:130
+#, c-format
+msgctxt "unit-format"
+msgid "%s EiB"
+msgstr "%s EiB"
+
+#: lib/unit.vala:130
+msgctxt "unit-symbols"
+msgid "exbibyte,exbibytes,EiB"
+msgstr "exbibyte,EiB"
+
+#: lib/unit.vala:131
+msgid "Zettabits"
+msgstr "Zettabitak"
+
+#: lib/unit.vala:131
+msgctxt "unit-symbols"
+msgid "zettabit,zettabits,Zb"
+msgstr "zettabit,Zb"
+
+#: lib/unit.vala:132
+msgid "Zettabytes"
+msgstr "Zettabyteak"
+
+#: lib/unit.vala:132
+msgctxt "unit-symbols"
+msgid "zettabyte,zettabytes,ZB"
+msgstr "zettabyte,ZB"
+
+#: lib/unit.vala:133
+msgid "Zebibits"
+msgstr "Zebibitak"
+
+#: lib/unit.vala:133
+#, c-format
+msgctxt "unit-format"
+msgid "%s Zib"
+msgstr "%s Zib"
+
+#: lib/unit.vala:133
+msgctxt "unit-symbols"
+msgid "zebibit,zebibits,Zib"
+msgstr "zebibit,Zib"
+
+#: lib/unit.vala:134
+msgid "Zebibytes"
+msgstr "Zebibyteak"
+
+#: lib/unit.vala:134
+#, c-format
+msgctxt "unit-format"
+msgid "%s ZiB"
+msgstr "%s ZiB"
+
+#: lib/unit.vala:134
+msgctxt "unit-symbols"
+msgid "zebibyte,zebibytes,ZiB"
+msgstr "zebibyte,ZiB"
+
+#: lib/unit.vala:135
+msgid "Yottabits"
+msgstr "Yottabitak"
+
+#: lib/unit.vala:135
+#, c-format
+msgctxt "unit-format"
+msgid "%s Yb"
+msgstr "%s Yb"
+
+#: lib/unit.vala:135
+msgctxt "unit-symbols"
+msgid "yottabit,yottabits,Yb"
+msgstr "yottabit,Yb"
+
+#: lib/unit.vala:136
+msgid "Yottabytes"
+msgstr "Yottabyteak"
+
+#: lib/unit.vala:136
+#, c-format
+msgctxt "unit-format"
+msgid "%s YB"
+msgstr "%s YB"
+
+#: lib/unit.vala:136
+msgctxt "unit-symbols"
+msgid "yottabyte,yottabytes,YB"
+msgstr "yottabyte,YB"
+
+#: lib/unit.vala:137
+msgid "Yobibits"
+msgstr "Yobibitak"
+
+#: lib/unit.vala:137
+#, c-format
+msgctxt "unit-format"
+msgid "%s Yib"
+msgstr "%s Yib"
+
+#: lib/unit.vala:137
+msgctxt "unit-symbols"
+msgid "yobibit,yobibits,Yib"
+msgstr "yobibit,Yib"
+
+#: lib/unit.vala:138
+msgid "Yobibytes"
+msgstr "Yobibyteak"
+
+#: lib/unit.vala:138
+#, c-format
+msgctxt "unit-format"
+msgid "%s YiB"
+msgstr "%s YiB"
+
+#: lib/unit.vala:138
+msgctxt "unit-symbols"
+msgid "yobibyte,yobibytes,YiB"
+msgstr "yobibyte,YiB"
+
+#: lib/unit.vala:139
+msgid "Hertz"
+msgstr "Hertzak"
+
+#: lib/unit.vala:139
+#, c-format
+msgctxt "unit-format"
+msgid "%s Hz"
+msgstr "%s Hz"
+
+#: lib/unit.vala:139
+msgctxt "unit-symbols"
+msgid "hertz,Hz"
+msgstr "hertz,Hz"
+
+#: lib/unit.vala:140
+msgid "Kilohertz"
+msgstr "Kilohertzak"
+
+#: lib/unit.vala:140
+#, c-format
+msgctxt "unit-format"
+msgid "%s kHz"
+msgstr "%s kHz"
+
+#: lib/unit.vala:140
+msgctxt "unit-symbols"
+msgid "kilohertz,kHz"
+msgstr "kilohertz,kHz"
+
+#: lib/unit.vala:141
+msgid "Megahertz"
+msgstr "Megahertzak"
+
+#: lib/unit.vala:141
+#, c-format
+msgctxt "unit-format"
+msgid "%s MHz"
+msgstr "%s MHz"
+
+#: lib/unit.vala:141
+msgctxt "unit-symbols"
+msgid "megahertz,MHz"
+msgstr "megahertz,MHz"
+
+#: lib/unit.vala:142
+msgid "Gigahertz"
+msgstr "Gigahertzak"
+
+#: lib/unit.vala:142
+#, c-format
+msgctxt "unit-format"
+msgid "%s GHz"
+msgstr "%s GHz"
+
+#: lib/unit.vala:142
+msgctxt "unit-symbols"
+msgid "gigahertz,GHz"
+msgstr "gigahertz,GHz"
+
+#: lib/unit.vala:143
+msgid "Terahertz"
+msgstr "Terahertzak"
+
+#: lib/unit.vala:143
+#, c-format
+msgctxt "unit-format"
+msgid "%s THz"
+msgstr "%s THz"
+
+#: lib/unit.vala:143
+msgctxt "unit-symbols"
+msgid "terahertz,THz"
+msgstr "terahertz,THz"
+
+#: lib/unit.vala:145
+msgid "Currency"
+msgstr "Dibisa"
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: lib/unit.vala:151
+#, c-format
+msgid "%s%%s"
+msgstr "%%2$s %1$s"
+
+#: search-provider/search-provider.vala:189
+msgid "Copy"
+msgstr "Kopiatu"
+
+#: search-provider/search-provider.vala:190
+msgid "Copy result to clipboard"
+msgstr "Kopiatu emaitza arbelera"
+
+#: src/ui/buttons-advanced.ui:143 src/ui/buttons-basic.ui:143
+#: src/ui/buttons-financial.ui:1979 src/ui/buttons-programming.ui:1899
+msgid "Modulus divide"
+msgstr "Moduluaren zatiketa"
+
+#: src/ui/buttons-advanced.ui:163 src/ui/buttons-basic.ui:163
+#: src/ui/buttons-financial.ui:1999 src/ui/buttons-programming.ui:1441
+msgid "Divide [/]"
+msgstr "Zatitu [/]"
+
+#: src/ui/buttons-advanced.ui:277 src/ui/buttons-basic.ui:277
+#: src/ui/buttons-financial.ui:2113 src/ui/buttons-programming.ui:1461
+msgid "Multiply [*]"
+msgstr "Biderkatu [*]"
+
+#: src/ui/buttons-advanced.ui:297 src/ui/buttons-basic.ui:297
+#: src/ui/buttons-financial.ui:2133 src/ui/buttons-programming.ui:1481
+msgid "Subtract [-]"
+msgstr "Kendu [-]"
+
+#: src/ui/buttons-advanced.ui:316 src/ui/buttons-basic.ui:316
+#: src/ui/buttons-financial.ui:2152 src/ui/buttons-programming.ui:1500
+msgid "Add [+]"
+msgstr "Gehitu [+]"
+
+#: src/ui/buttons-advanced.ui:335 src/ui/buttons-basic.ui:335
+#: src/ui/buttons-programming.ui:1415
+msgid "Pi [Ctrl+P]"
+msgstr "Pi [Ctrl+P]"
+
+#: src/ui/buttons-advanced.ui:362 src/ui/buttons-basic.ui:362
+#: src/ui/buttons-financial.ui:2172 src/ui/buttons-programming.ui:1396
+msgid "Root [Ctrl+R]"
+msgstr "Erroa [Ctrl+R]"
+
+#: src/ui/buttons-advanced.ui:380 src/ui/buttons-basic.ui:380
+msgid "Square [Ctrl+2]"
+msgstr "Karratua [Ctrl+2]"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: src/ui/buttons-advanced.ui:384 src/ui/buttons-advanced.ui:761
+#: src/ui/buttons-basic.ui:384 src/ui/buttons-financial.ui:2301
+#: src/ui/buttons-programming.ui:2242
+msgid "Exponent"
+msgstr "Berretzailea:"
+
+#: src/ui/buttons-advanced.ui:410 src/ui/buttons-basic.ui:410
+#: src/ui/buttons-financial.ui:2191 src/ui/buttons-programming.ui:1539
+msgid "Clear Display [Escape]"
+msgstr "Garbitu pantaila [Ihes]"
+
+#: src/ui/buttons-advanced.ui:437 src/ui/buttons-basic.ui:437
+#: src/ui/buttons-financial.ui:2218 src/ui/buttons-programming.ui:1918
+msgid "Start Group [(]"
+msgstr "Bloke-hasiera [(]"
+
+#: src/ui/buttons-advanced.ui:457 src/ui/buttons-basic.ui:457
+#: src/ui/buttons-financial.ui:2238 src/ui/buttons-programming.ui:1937
+msgid "End Group [)]"
+msgstr "Bloke-amaiera [)]"
+
+#: src/ui/buttons-advanced.ui:477 src/ui/buttons-basic.ui:477
+#: src/ui/buttons-financial.ui:2258
+msgid "Percentage [%]"
+msgstr "Ehunekoa [%]"
+
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: src/ui/buttons-advanced.ui:491 src/ui/buttons-basic.ui:491
+#: src/ui/buttons-financial.ui:2272 src/ui/buttons-programming.ui:1514
+msgid "="
+msgstr "="
+
+#: src/ui/buttons-advanced.ui:497 src/ui/buttons-basic.ui:497
+#: src/ui/buttons-financial.ui:2278 src/ui/buttons-programming.ui:1520
+msgid "Calculate Result"
+msgstr "Kalkulatu emaitza"
+
+#: src/ui/buttons-advanced.ui:528 src/ui/buttons-programming.ui:1967
+msgid "Subscript mode [Alt]"
+msgstr "Azpiindizeen modua [Alt]"
+
+#. Accessible name for the subscript mode button
+#: src/ui/buttons-advanced.ui:533 src/ui/buttons-programming.ui:1972
+msgid "Subscript"
+msgstr "Azpiindizea"
+
+#: src/ui/buttons-advanced.ui:558 src/ui/buttons-programming.ui:1997
+msgid "Superscript mode [Ctrl]"
+msgstr "Goi-indizeen modua [Ctrl]"
+
+#. Accessible name for the superscript mode button
+#: src/ui/buttons-advanced.ui:563 src/ui/buttons-programming.ui:2002
+msgid "Superscript"
+msgstr "Goi-indizea"
+
+#: src/ui/buttons-advanced.ui:590 src/ui/buttons-programming.ui:2440
+msgid "Factorize [Ctrl+F]"
+msgstr "Faktorizatu [Ctrl+F]"
+
+#. Accessible name for the factorize button
+#: src/ui/buttons-advanced.ui:594 src/ui/buttons-programming.ui:2444
+msgid "Factorize"
+msgstr "Faktorizatu"
+
+#: src/ui/buttons-advanced.ui:613
+msgid "Scientific exponent [Ctrl+E]"
+msgstr "Berretzaile zientifikoa [Ctrl+E]"
+
+#. Accessible name for the scientific exponent button
+#: src/ui/buttons-advanced.ui:617
+msgid "Scientific Exponent"
+msgstr "Berretzaile zientifikoa"
+
+#: src/ui/buttons-advanced.ui:643
+msgid "Cosine"
+msgstr "Kosinua"
+
+#: src/ui/buttons-advanced.ui:662
+msgid "Sine"
+msgstr "Sinua"
+
+#: src/ui/buttons-advanced.ui:681
+msgid "Tangent"
+msgstr "Tangentea"
+
+#: src/ui/buttons-advanced.ui:700
+msgid "Hyperbolic Cosine"
+msgstr "Kosinu hiperbolikoa"
+
+#: src/ui/buttons-advanced.ui:719
+msgid "Hyperbolic Sine"
+msgstr "Sinu hiperbolikoa"
+
+#: src/ui/buttons-advanced.ui:738
+msgid "Hyperbolic Tangent"
+msgstr "Tangente hiperbolikoa"
+
+#: src/ui/buttons-advanced.ui:756 src/ui/buttons-financial.ui:2296
+#: src/ui/buttons-programming.ui:2237
+msgid "Exponent [^ or **]"
+msgstr "Berretzailea [^ edo **]"
+
+#: src/ui/buttons-advanced.ui:786 src/ui/buttons-programming.ui:2267
+msgid "Inverse [Ctrl+I]"
+msgstr "Alderantzikatu [Ctrl+I]"
+
+#. Accessible name for the inverse button
+#: src/ui/buttons-advanced.ui:791 src/ui/buttons-programming.ui:2272
+msgid "Inverse"
+msgstr "Alderantzikatu"
+
+#: src/ui/buttons-advanced.ui:818
+msgid "Euler’s Number"
+msgstr "Euler-en zenbakia"
+
+#: src/ui/buttons-advanced.ui:845
+msgid "Natural Logarithm"
+msgstr "Logaritmo nepertarra"
+
+#: src/ui/buttons-advanced.ui:864 src/ui/buttons-financial.ui:2327
+#: src/ui/buttons-programming.ui:2299
+msgid "Logarithm"
+msgstr "Logaritmoa"
+
+#: src/ui/buttons-advanced.ui:882 src/ui/buttons-programming.ui:2337
+msgid "Factorial [!]"
+msgstr "Faktoriala [!]"
+
+#. Accessible name for the factorial button
+#: src/ui/buttons-advanced.ui:887 src/ui/buttons-programming.ui:2342
+msgid "Factorial"
+msgstr "Faktoriala"
+
+#: src/ui/buttons-advanced.ui:913 src/ui/buttons-programming.ui:2368
+msgid "Absolute Value [|]"
+msgstr "Balio absolutua [|]"
+
+#. Accessible name for the absolute value button
+#: src/ui/buttons-advanced.ui:918 src/ui/buttons-programming.ui:2373
+msgid "Absolute Value"
+msgstr "Balio absolutua"
+
+#: src/ui/buttons-advanced.ui:970
+msgid "Real Component"
+msgstr "Zati erreala"
+
+#: src/ui/buttons-advanced.ui:990
+msgid "Imaginary Component"
+msgstr "Zati irudikaria"
+
+#: src/ui/buttons-advanced.ui:1010
+msgid "Complex conjugate"
+msgstr "Konplexu konjugatua"
+
+#: src/ui/buttons-advanced.ui:1030
+msgid "Complex argument"
+msgstr "Argumentu konplexua"
+
+#. Accessible name for the memory button
+#: src/ui/buttons-advanced.ui:1048 src/ui/buttons-advanced.ui:1051
+#: src/ui/buttons-financial.ui:2358 src/ui/buttons-financial.ui:2361
+#: src/ui/buttons-programming.ui:2486
+msgid "Memory"
+msgstr "Memoria"
+
+#. The label on the memory button
+#: src/ui/buttons-advanced.ui:1060 src/ui/buttons-financial.ui:2370
+#: src/ui/buttons-programming.ui:2499
+msgid "x"
+msgstr "x"
+
+#: src/ui/buttons-advanced.ui:1097
+msgid "Additional Functions"
+msgstr "Funtzio gehigarriak"
+
+#. Accessible name for the store value button
+#: src/ui/buttons-advanced.ui:1100 src/ui/buttons-programming.ui:2489
+msgid "Store"
+msgstr "Biltegiratu"
+
+#. Title of Compounding Term dialog
+#: src/ui/buttons-financial.ui:8 src/ui/buttons-financial.ui:2409
+msgid "Compounding Term"
+msgstr "Kapitalizazio-epealdia"
+
+#: src/ui/buttons-financial.ui:22 src/ui/buttons-financial.ui:205
+#: src/ui/buttons-financial.ui:388 src/ui/buttons-financial.ui:571
+#: src/ui/buttons-financial.ui:723 src/ui/buttons-financial.ui:907
+#: src/ui/buttons-financial.ui:1091 src/ui/buttons-financial.ui:1275
+#: src/ui/buttons-financial.ui:1459 src/ui/buttons-financial.ui:1674
+#: src/ui/buttons-programming.ui:2644
+msgid "_Cancel"
+msgstr "_Utzi"
+
+#. Compounding Term Dialog: Calculate button
+#. Double-Declining Depreciation Dialog: Calculate button
+#. Future Value Dialog: Calculate button
+#. Gross Profit Margin Dialog: Calculate button
+#. Periodic Payment Dialog: Calculate button
+#. Present Value Dialog: Calculate button
+#. Periodic Interest Rate Dialog: Calculate button
+#. Straight-Line Depreciation Dialog: Calculate button
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Calculate result button
+#. Payment Period Dialog: Button to calculate result
+#: src/ui/buttons-financial.ui:37 src/ui/buttons-financial.ui:220
+#: src/ui/buttons-financial.ui:403 src/ui/buttons-financial.ui:586
+#: src/ui/buttons-financial.ui:738 src/ui/buttons-financial.ui:922
+#: src/ui/buttons-financial.ui:1106 src/ui/buttons-financial.ui:1290
+#: src/ui/buttons-financial.ui:1474 src/ui/buttons-financial.ui:1689
+msgid "C_alculate"
+msgstr "_Kalkulatu"
+
+#. Compounding Term Dialog: Label before present value input
+#. Periodic Interest Rate Dialog: Label before present value input
+#: src/ui/buttons-financial.ui:117 src/ui/buttons-financial.ui:1172
+msgid "Present _Value:"
+msgstr "Uneko _balioa:"
+
+#. Compounding Term Dialog: Label before periodic interest rate input
+#. Future Value Dialog: Label before periodic interest rate input
+#. Periodic Payment Dialog: Label before periodic interest rate input
+#. Present Value Dialog: Label before periodic interest rate input
+#. Payment Period Dialog: Label before periodic interest rate input
+#: src/ui/buttons-financial.ui:133 src/ui/buttons-financial.ui:468
+#: src/ui/buttons-financial.ui:804 src/ui/buttons-financial.ui:988
+#: src/ui/buttons-financial.ui:1769
+msgid "Periodic Interest _Rate:"
+msgstr "Interes-tasa _periodikoa:"
+
+#. Compounding Term Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:149
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr "Uneko balioko inbertsio bat etorkizuneko baliora heltzeko zenbat kapitalizazio-denboraldi beharko diren kalkulatzen du, interes-tasa finkoa aplikatuz kapitalizazio-denboraldi bakoitzeko."
+
+#. Compounding Term Dialog: Label before future value input
+#. Periodic Interest Rate Dialog: Label before future value input
+#: src/ui/buttons-financial.ui:163 src/ui/buttons-financial.ui:1156
+msgid "_Future Value:"
+msgstr "_Etorkizuneko balioa:"
+
+#. Title of Double-Declining Depreciation dialog
+#: src/ui/buttons-financial.ui:191
+msgid "Double-Declining Depreciation"
+msgstr "Faktore bikoitzeko amortizazio beherakorra"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:255
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr "Aktibo baten denboraldi jakin bateko amortizazio-esleipen aritmetikoki beherakorra kalkulatzen du."
+
+#. Double-Declining Depreciation Dialog: Label before cost input
+#. Gross Profit Margin Dialog: Label before cost input
+#: src/ui/buttons-financial.ui:269 src/ui/buttons-financial.ui:635
+msgid "C_ost:"
+msgstr "K_ostua:"
+
+#. Double-Declining Depreciation Dialog: Label before life input
+#. Straight-Line Depreciation Dialog: Label before life input
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Label before life input
+#: src/ui/buttons-financial.ui:285 src/ui/buttons-financial.ui:1357
+#: src/ui/buttons-financial.ui:1525
+msgid "_Life:"
+msgstr "_Bizitza:"
+
+#. Double-Declining Depreciation Dialog: Label before period input
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Label before period input
+#: src/ui/buttons-financial.ui:331 src/ui/buttons-financial.ui:1509
+msgid "_Period:"
+msgstr "_Denboraldia:"
+
+#. Title of Future Value dialog
+#: src/ui/buttons-financial.ui:374 src/ui/buttons-financial.ui:2447
+msgid "Future Value"
+msgstr "Etorkizuneko balioa"
+
+#. Future Value Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:438
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr "Inbertsio baten etorkizuneko balioa kalkulatzen du, interes-tasa periodikoko ordainketa erregularretan oinarrituta epealdiko ordainketa-denboraldietan zehar."
+
+#. Future Value Dialog: Label before periodic payment input
+#. Present Value Dialog: Label before periodic payment input
+#. Payment Period Dialog: Label before periodic payment input
+#: src/ui/buttons-financial.ui:452 src/ui/buttons-financial.ui:972
+#: src/ui/buttons-financial.ui:1801
+msgid "_Periodic Payment:"
+msgstr "_Ordainketa periodikoa:"
+
+#. Future Value Dialog: Label before number of periods input
+#. Present Value Dialog: Label before number of periods input
+#: src/ui/buttons-financial.ui:484 src/ui/buttons-financial.ui:1004
+msgid "_Number of Periods:"
+msgstr "_Denboraldi kopurua:"
+
+#. Title of Gross Profit Margin dialog
+#: src/ui/buttons-financial.ui:557 src/ui/buttons-financial.ui:2586
+msgid "Gross Profit Margin"
+msgstr "Irabazi gordinaren marjina"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:621
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr "Produktu bat birsaltzeko prezioa kalkulatzen du, produktuaren kostuan eta eta lortu nahi den irabazi gordinaren marjinan oinarrituta."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: src/ui/buttons-financial.ui:651
+msgid "_Margin:"
+msgstr "_Marjina:"
+
+#. Title of Periodic Payment dialog
+#: src/ui/buttons-financial.ui:709 src/ui/buttons-financial.ui:2566
+msgid "Periodic Payment"
+msgstr "Ordainketa periodikoa"
+
+#. Periodic Payment Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:774
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr "Mailegu baten aldizkako ordainketaren zenbatekoa kalkulatzen du, ordainketak ordainketa-denboraldi bakoitzaren amaieran egiten direla kontuan izanda. "
+
+#. Periodic Payment Dialog: Label before principal input
+#: src/ui/buttons-financial.ui:788
+msgid "_Principal:"
+msgstr "_Printzipala:"
+
+#. Periodic Payment Dialog: Label before term input
+#. Periodic Interest Rate Dialog: Label before term input
+#: src/ui/buttons-financial.ui:820 src/ui/buttons-financial.ui:1188
+msgid "_Term:"
+msgstr "_Epealdia:"
+
+#. Title of Present Value dialog
+#: src/ui/buttons-financial.ui:893 src/ui/buttons-financial.ui:2546
+msgid "Present Value"
+msgstr "Uneko balioa"
+
+#. Present Value Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:958
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr "Inbertsio baten uneko balioa kalkulatzen du, interes-tasa periodikoko ordainketa erregularretan oinarrituta epealdiko ordainketa-denboraldietan zehar. "
+
+#. Title of Periodic Interest Rate dialog
+#: src/ui/buttons-financial.ui:1077 src/ui/buttons-financial.ui:2526
+msgid "Periodic Interest Rate"
+msgstr "Interes-tasa periodikoa"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:1142
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr "Kapitalizazio-denboraldi kopuru batean zehar inbertsio bat etorkizuneko baliora heltzeko aplikatu beharreko interes-tasa periodikoa kalkulatzen du. "
+
+#. Title of Straight-Line Depreciation dialog
+#: src/ui/buttons-financial.ui:1261
+msgid "Straight-Line Depreciation"
+msgstr "Amortizazio lineala"
+
+#. Straight-Line Depreciation Dialog: Label before cost input
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Label before cost input
+#: src/ui/buttons-financial.ui:1325 src/ui/buttons-financial.ui:1557
+msgid "_Cost:"
+msgstr "K_ostua:"
+
+#. Straight-Line Depreciation Dialog: Label before salvage input
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Label before salvage input
+#: src/ui/buttons-financial.ui:1341 src/ui/buttons-financial.ui:1541
+msgid "_Salvage:"
+msgstr "_Salbamendua:"
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:1419
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr "Denboraldi bateko amortizazio lineala kalkulatzen du. Amortizazio linealaren metodoak zati berdinetan zatitzen du kostu amortizagarria aktibo baten bizitza erabilgarrian zehar. Bizitza erabilgarria aktibo bat amortizatzeko denboraldien kopurua da (normalean urteetan zehazten da). "
+
+#. Title of Sum-of-the-Years’-Digits Depreciation dialog
+#: src/ui/buttons-financial.ui:1445
+msgid "Sum-of-the-Years’-Digits Depreciation"
+msgstr "Urteen digituen baturaren amortizazioa"
+
+#. Sum-of-the-Years’-Digits Depreciation Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:1634
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years’-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr "Aktibo baten denboraldi jakin baterako amortizazio-esleipena kalkulatzen du, urteen digituen baturaren metodoa erabiliz. Amortizazio-metodo honek amortizazio-tasa azeleratzen du, amortizazio-gastu handiagoa aplikatzeko hasierako denboraldietan amaierakoetan baino. Bizitza erabilgarria aktibo bat amortizatzeko denboraldien kopurua da (normalean urteetan zehazten da). "
+
+#. Title of Payment Period dialog
+#: src/ui/buttons-financial.ui:1660
+msgid "Payment Period"
+msgstr "Denboraldi kopurua"
+
+#. Payment Period Dialog: Label before future value input
+#: src/ui/buttons-financial.ui:1785
+msgid "Future _Value:"
+msgstr "Etorkizuneko _balioa:"
+
+#. Payment Period Dialog: Description of calculation
+#: src/ui/buttons-financial.ui:1818
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
+msgstr "Urtealdi arrunt batean, interes-tasa periodiko bat aplikatuz, etorkizuneko balio jakin bat metatzeko zenbat ordainketa-denboraldi behar diren kalkulatzen du."
+
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#: src/ui/buttons-financial.ui:2403
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/ui/buttons-financial.ui:2422
+msgid "Ddb"
+msgstr "Ddb"
+
+#: src/ui/buttons-financial.ui:2428
+msgid "Double Declining Depreciation"
+msgstr "Faktore bikoitzeko amortizazio beherakorra"
+
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#: src/ui/buttons-financial.ui:2441
+msgid "Fv"
+msgstr "Fv"
+
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: src/ui/buttons-financial.ui:2460
+msgid "Term"
+msgstr "Epealdia"
+
+#: src/ui/buttons-financial.ui:2466
+msgid "Financial Term"
+msgstr "Epe finantzarioa"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years’-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/ui/buttons-financial.ui:2480
+msgid "Syd"
+msgstr "Syd"
+
+#: src/ui/buttons-financial.ui:2486
+msgid "Sum of the Years Digits Depreciation"
+msgstr "Urteen digituen baturaren amortizazioa"
+
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: src/ui/buttons-financial.ui:2500
+msgid "Sln"
+msgstr "Sln"
+
+#: src/ui/buttons-financial.ui:2506
+msgid "Straight Line Depreciation"
+msgstr "Amortizazio lineala"
+
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: src/ui/buttons-financial.ui:2520
+msgid "Rate"
+msgstr "Tasa"
+
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#: src/ui/buttons-financial.ui:2540
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#: src/ui/buttons-financial.ui:2560
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#: src/ui/buttons-financial.ui:2580
+msgid "Gpm"
+msgstr "Gpm"
+
+#: src/ui/buttons-programming.ui:19
+msgid "Binary"
+msgstr "Bitarra"
+
+#: src/ui/buttons-programming.ui:20
+msgid "Octal"
+msgstr "Zortzitarra"
+
+#: src/ui/buttons-programming.ui:21
+msgid "Decimal"
+msgstr "Dezimala"
+
+#: src/ui/buttons-programming.ui:22
+msgid "Hexadecimal"
+msgstr "Hamaseitarra"
+
+#. Accessible name for the shift left button
+#: src/ui/buttons-programming.ui:2026 src/ui/buttons-programming.ui:2029
+msgid "Shift Left"
+msgstr "Lerratu ezkerrera"
+
+#. Accessible name for the shift right button
+#: src/ui/buttons-programming.ui:2072 src/ui/buttons-programming.ui:2075
+msgid "Shift Right"
+msgstr "Lerratu eskuinera"
+
+#: src/ui/buttons-programming.ui:2120
+msgid "Boolean Exclusive OR"
+msgstr "OR boolear esklusiboa"
+
+#: src/ui/buttons-programming.ui:2139
+msgid "Boolean OR"
+msgstr "OR boolearra"
+
+#: src/ui/buttons-programming.ui:2159
+msgid "Boolean AND"
+msgstr "AND boolearra"
+
+#: src/ui/buttons-programming.ui:2179
+msgid "Boolean NOT"
+msgstr "NOT boolearra"
+
+#: src/ui/buttons-programming.ui:2199
+msgid "Ones’ Complement"
+msgstr "Baten osagarria"
+
+#: src/ui/buttons-programming.ui:2219
+msgid "Two’s Complement"
+msgstr "Biren osagarria"
+
+#: src/ui/buttons-programming.ui:2319
+msgid "Binary Logarithm"
+msgstr "Logaritmo bitarra"
+
+#: src/ui/buttons-programming.ui:2400
+msgid "Integer Component"
+msgstr "Osoko zatia"
+
+#: src/ui/buttons-programming.ui:2420
+msgid "Fractional Component"
+msgstr "Zati frakzionala"
+
+#. Title of insert character code dialog
+#: src/ui/buttons-programming.ui:2463 src/ui/buttons-programming.ui:2597
+msgid "Insert Character Code"
+msgstr "Txertatu karaktere-kodea"
+
+#. Accessible name for the insert character button
+#: src/ui/buttons-programming.ui:2467
+msgid "Insert Character"
+msgstr "Txertatu karakterea"
+
+#: src/ui/buttons-programming.ui:2533
+msgid "Change word size"
+msgstr "Aldatu hitz-tamaina"
+
+#: src/ui/buttons-programming.ui:2567
+msgid "Word Size"
+msgstr "Hitz-tamaina"
+
+#. Insert ASCII dialog: Label before character entry
+#: src/ui/buttons-programming.ui:2610
+msgid "Ch_aracter:"
+msgstr "_Karakterea:"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: src/ui/buttons-programming.ui:2659
+msgid "_Insert"
+msgstr "_Txertatu"
+
+#. Translators: Do not translate possible mode names basic, advanced, financial, programming and keyboard
+#: src/gnome-calculator.vala:25
+msgid "Start in given mode (basic, advanced, financial, programming, keyboard)"
+msgstr "Hasi emandako moduan (oinarrizkoa, aurreratua, finantzarioa, programazioa, teklatua)"
+
+#: src/gnome-calculator.vala:26
+msgid "Solve given equation"
+msgstr "Ebatzi emandako ekuazioa"
+
+#: src/gnome-calculator.vala:27
+msgid "Start with given equation"
+msgstr "Hasi emandako ekuazioarekin"
+
+#: src/gnome-calculator.vala:28
+msgid "Show release version"
+msgstr "Erakutsi argitaratze-bertsioa"
+
+#. Translators: Error message displayed when unable to launch help browser
+#: src/gnome-calculator.vala:314
+msgid "Unable to open help file"
+msgstr "Ezin izan da laguntza-fitxategia ireki"
+
+#. The translator credits. Please translate this with your name (s).
+#: src/gnome-calculator.vala:345
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: src/gnome-calculator.vala:351 src/ui/math-window.ui:101
+msgid "About Calculator"
+msgstr "Kalkulagailuari buruz"
+
+#. Short description in the about dialog
+#: src/gnome-calculator.vala:360
+msgid "Calculator with financial and scientific modes."
+msgstr "Modu finantzarioa eta zientifikoa dituen kalkulagailua."
+
+#: src/gnome-calculator.vala:375
+msgid "Are you sure you want to close all open windows?"
+msgstr "Ziur zaude leiho ireki guztiak itxi nahi dituzula?"
+
+#: src/gnome-calculator.vala:376
+msgid "Close _All"
+msgstr "Itxi _denak"
+
+#: src/math-buttons.vala:223 src/math-buttons.vala:581
+#: src/math-buttons.vala:596
+#, c-format
+msgid "%d-bit"
+msgid_plural "%d-bit"
+msgstr[0] "%d bit"
+msgstr[1] "%d bit"
+
+#: src/math-buttons.vala:566
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] "%d. posizioa"
+msgstr[1] "%d. posizioa"
+
+#: src/ui/math-converter.ui:36
+msgid " to "
+msgstr " - "
+
+#: src/ui/math-converter.ui:66
+msgid "Switch conversion units"
+msgstr "Trukatu bihurketako unitateak"
+
+#: src/ui/math-converter.ui:112
+msgctxt "convertion equals label"
+msgid "="
+msgstr "="
+
+#: src/math-display.vala:562
+msgid "Defined Functions"
+msgstr "Definitutako funtzioak"
+
+#: src/math-display.vala:619
+msgid "Defined Variables"
+msgstr "Definitutako aldagaiak"
+
+#: src/ui/math-function-popover.ui:34
+msgid "New function"
+msgstr "Funtzio berria"
+
+#: src/ui/math-function-popover.ui:47
+msgid "Select no. of arguments"
+msgstr "Hautatu argumentu kopurua"
+
+#. Translators: Word size combo: 8 bit
+#: src/math-preferences.vala:26
+msgid "8-bit"
+msgstr "8 bit"
+
+#. Translators: Word size combo: 16 bit
+#: src/math-preferences.vala:28
+msgid "16-bit"
+msgstr "16 bit"
+
+#. Translators: Word size combo: 32 bit
+#: src/math-preferences.vala:30
+msgid "32-bit"
+msgstr "32 bit"
+
+#. Translators: Word size combo: 64 bit
+#: src/math-preferences.vala:32
+msgid "64-bit"
+msgstr "64 bit"
+
+#. Translators: Refresh interval combo: never
+#: src/math-preferences.vala:37
+msgid "never"
+msgstr "inoiz ere ez"
+
+#. Translators: Refresh interval combo: daily
+#: src/math-preferences.vala:39
+msgid "daily"
+msgstr "egunero"
+
+#. Translators: Refresh interval combo: weekly
+#: src/math-preferences.vala:41
+msgid "weekly"
+msgstr "astero"
+
+#: src/ui/math-preferences.ui:22
+msgid "Number of _decimals"
+msgstr "_Dezimalen kopurua"
+
+#: src/ui/math-preferences.ui:40
+msgid "Trailing _zeroes"
+msgstr "Amaierako _zeroak"
+
+#: src/ui/math-preferences.ui:55
+msgid "_Thousands separators"
+msgstr "_Milakoen bereizleak"
+
+#: src/ui/math-preferences.ui:70
+msgid "_Angle units"
+msgstr "_Angelu-unitateak"
+
+#: src/ui/math-preferences.ui:77
+msgid "Word _size"
+msgstr "Hitz-_tamaina"
+
+#: src/ui/math-preferences.ui:84
+msgid "E_xchange rate refresh interval"
+msgstr "T_ruke-tasaren freskatze-tartea"
+
+#: src/ui/math-shortcuts.ui:15
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Orokorra"
+
+#: src/ui/math-shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Open a new window"
+msgstr "Ireki leiho berria"
+
+#: src/ui/math-shortcuts.ui:27
+msgctxt "shortcut window"
+msgid "Close current window"
+msgstr "Itxi uneko leihoa"
+
+#: src/ui/math-shortcuts.ui:34
+msgctxt "shortcut window"
+msgid "Quit the application"
+msgstr "Irten aplikaziotik"
+
+#: src/ui/math-shortcuts.ui:41
+msgctxt "shortcut window"
+msgid "Show help"
+msgstr "Erakutsi laguntza"
+
+#: src/ui/math-shortcuts.ui:48
+msgctxt "shortcut window"
+msgid "Open menu"
+msgstr "Ireki menua"
+
+#: src/ui/math-shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Keyboard shortcuts"
+msgstr "Laster-teklak"
+
+#: src/ui/math-shortcuts.ui:62
+msgctxt "shortcut window"
+msgid "Clear history"
+msgstr "Garbitu historia"
+
+#: src/ui/math-shortcuts.ui:70
+msgctxt "shortcut window"
+msgid "Switching modes"
+msgstr "Moduen aldaketak"
+
+#: src/ui/math-shortcuts.ui:75
+msgctxt "shortcut window"
+msgid "Switch to Basic mode"
+msgstr "Aldatu oinarrizko modura"
+
+#: src/ui/math-shortcuts.ui:82
+msgctxt "shortcut window"
+msgid "Switch to Advanced mode"
+msgstr "Aldatu modu aurreratura"
+
+#: src/ui/math-shortcuts.ui:89
+msgctxt "shortcut window"
+msgid "Switch to Financial mode"
+msgstr "Aldatu modu finantzariora"
+
+#: src/ui/math-shortcuts.ui:96
+msgctxt "shortcut window"
+msgid "Switch to Programming mode"
+msgstr "Aldatu programazio modura"
+
+#: src/ui/math-shortcuts.ui:103
+msgctxt "shortcut window"
+msgid "Switch to Keyboard mode"
+msgstr "Aldatu teklatu modura"
+
+#: src/ui/math-shortcuts.ui:111
+msgctxt "shortcut window"
+msgid "Keyboard entry"
+msgstr "Teklatuaren sarrera"
+
+#: src/ui/math-shortcuts.ui:116
+msgctxt "shortcut window"
+msgid "Multiply (×)"
+msgstr "Biderkatu (×)"
+
+#: src/ui/math-shortcuts.ui:123
+msgctxt "shortcut window"
+msgid "Divide (÷)"
+msgstr "Zatitu (÷)"
+
+#: src/ui/math-shortcuts.ui:130
+msgctxt "shortcut window"
+msgid "Square root (√)"
+msgstr "Erro karratua (√)"
+
+#: src/ui/math-shortcuts.ui:137
+msgctxt "shortcut window"
+msgid "Inverse"
+msgstr "Alderantzikatu"
+
+#: src/ui/math-shortcuts.ui:144
+msgctxt "shortcut window"
+msgid "Pi (π)"
+msgstr "Pi (π)"
+
+#: src/ui/math-shortcuts.ui:151
+msgctxt "shortcut window"
+msgid "Enter numbers in scientific format"
+msgstr "Sartu zenbakiak formatu zientifikoan"
+
+#: src/ui/math-shortcuts.ui:159
+msgctxt "shortcut window"
+msgid "Programming mode"
+msgstr "Programazioa modua"
+
+#: src/ui/math-shortcuts.ui:164
+msgctxt "shortcut window"
+msgid "Switch to binary"
+msgstr "Aldatu bitarrera"
+
+#: src/ui/math-shortcuts.ui:171
+msgctxt "shortcut window"
+msgid "Switch to octal"
+msgstr "Aldatu zortzitarrera"
+
+#: src/ui/math-shortcuts.ui:178
+msgctxt "shortcut window"
+msgid "Switch to decimal"
+msgstr "Aldatu hamartarrera"
+
+#: src/ui/math-shortcuts.ui:185
+msgctxt "shortcut window"
+msgid "Switch to hexadecimal"
+msgstr "Aldatu hamaseitarrera"
+
+#: src/ui/math-shortcuts.ui:193
+msgctxt "shortcut window"
+msgid "Others"
+msgstr "Bestelakoak"
+
+#: src/ui/math-shortcuts.ui:198
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "Kopiatu"
+
+#: src/ui/math-shortcuts.ui:205
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr "Itsatsi"
+
+#: src/ui/math-shortcuts.ui:212
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr "Desegin"
+
+#: src/ui/math-shortcuts.ui:219
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr "Berregin"
+
+#: src/ui/math-shortcuts.ui:226
+msgctxt "shortcut window"
+msgid "Previous result"
+msgstr "Aurreko emaitza"
+
+#: src/ui/math-shortcuts.ui:233
+msgctxt "shortcut window"
+msgid "Next result"
+msgstr "Hurrengo emaitza"
+
+#: src/ui/math-shortcuts.ui:240
+msgctxt "shortcut window"
+msgid "Switch to Keyboard mode (alt.)"
+msgstr "Aldatu teklatu modura (alt.)"
+
+#: src/ui/math-variable-popover.ui:38
+msgid "Variable name"
+msgstr "Aldagaiaren izena"
+
+#: src/ui/math-variable-popover.ui:52
+msgid "Store value into existing or new variable"
+msgstr "Gorde balioa existitzen edo berria den aldagaian"
+
+#: src/ui/math-window.ui:20 src/math-window.vala:90
+msgid "Basic"
+msgstr "Oinarrizkoa"
+
+#: src/ui/math-window.ui:25 src/math-window.vala:95
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: src/ui/math-window.ui:30 src/math-window.vala:100
+msgid "Financial"
+msgstr "Finantzarioa"
+
+#: src/ui/math-window.ui:35 src/math-window.vala:105
+msgid "Programming"
+msgstr "Programazioa"
+
+#: src/ui/math-window.ui:40 src/math-window.vala:110
+msgid "Keyboard"
+msgstr "Teklatua"
+
+#: src/ui/math-window.ui:49
+msgid "_New Window"
+msgstr "_Leiho berria"
+
+#. Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "automatic"; other possible options are "_Fixed", "_Scientific" and "_Engineering"
+#: src/ui/math-window.ui:61
+msgid "_Automatic"
+msgstr "_Automatikoa"
+
+#. Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "fixed"; other possible options are "_Automatic", "_Scientific" and "_Engineering"
+#: src/ui/math-window.ui:67
+msgid "_Fixed"
+msgstr "_Finkoa"
+
+#. Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "scientific"; other possible options are "_Fixed", "_Automatic" and "_Engineering"
+#: src/ui/math-window.ui:73
+msgid "_Scientific"
+msgstr "_Zientifikoa"
+
+#. Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "engineering"; other possible options are "_Fixed", "_Scientific" and "_Automatic"
+#: src/ui/math-window.ui:79
+msgid "_Engineering"
+msgstr "_Ingeniaritza"
+
+#: src/ui/math-window.ui:89
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#: src/ui/math-window.ui:93
+msgid "Keyboard Shortcuts"
+msgstr "Laster-teklak"
+
+#: src/ui/math-window.ui:97
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: src/ui/math-window.ui:132
+msgid "Mode selection"
+msgstr "Moduaren hautapena"
+
+#: src/ui/math-window.ui:179
+msgid "Undo"
+msgstr "Desegin"
+
+#: src/ui/math-window.ui:180
+msgid "Undo [Ctrl+Z]"
+msgstr "Desegin [Ctrl+Z]"
+
+#: src/ui/math-window.ui:196
+msgid "Primary menu"
+msgstr "Menu nagusia"
+
+#: src/math-window.vala:138
+msgid "_Quit"
+msgstr "I_rten"
+
+#~ msgid "How often the currency exchange rates should be updated"
+#~ msgstr "Zenbatero eguneratuko den dibisaren truke-tasa"
+
+#~ msgid "Square root [Ctrl+R]"
+#~ msgstr "Erro karratua [Ctrl+R]"
+
+#~ msgid "Financial Mode"
+#~ msgstr "Modu finantzarioa"
+
+#~ msgid "8 bits"
+#~ msgstr "8 bit"
+
+#~ msgid "16 bits"
+#~ msgstr "16 bit"
+
+#~ msgid "32 bits"
+#~ msgstr "32 bit"
+
+#~ msgid "64 bits"
+#~ msgstr "64 bit"
+
+#~ msgid "Number _Format:"
+#~ msgstr "Zenbakien _formatua:"
+
+#~ msgid "Start in given mode"
+#~ msgstr "Hasi emandako moduan"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Hobespenak"
+
+#~ msgid "_About Calculator"
+#~ msgstr "Kalkulagailua aplikazioari _buruz"
+
+#~ msgid "Menu"
+#~ msgstr "Menua"

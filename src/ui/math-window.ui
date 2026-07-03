@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.19.0 -->
+<interface>
+  <requires lib="gtk+" version="3.16"/>
+  <object class="GtkAdjustment" id="hadjustment">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="vadjustment">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+    <signal name="changed" handler="scroll_changed_cb" swapped="no"/>
+    <signal name="value-changed" handler="scroll_value_changed_cb" swapped="no"/>
+  </object>
+  <menu id="window_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Basic</attribute>
+        <attribute name="action">win.mode</attribute>
+        <attribute name="target">basic</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Advanced</attribute>
+        <attribute name="action">win.mode</attribute>
+        <attribute name="target">advanced</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Financial</attribute>
+        <attribute name="action">win.mode</attribute>
+        <attribute name="target">financial</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Programming</attribute>
+        <attribute name="action">win.mode</attribute>
+        <attribute name="target">programming</attribute>
+      </item>
+       <item>
+        <attribute name="label" translatable="yes">Keyboard</attribute>
+        <attribute name="action">win.mode</attribute>
+        <attribute name="target">keyboard</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_New Window</attribute>
+        <attribute name="action">app.new-window</attribute>
+      </item>
+    </section>
+
+    <section>
+      <item>
+         <attribute name="label" translatable="yes">Number format</attribute>
+         <attribute name="action">false</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "automatic"; other possible options are "_Fixed", "_Scientific" and "_Engineering" -->
+        <attribute name="label" translatable="yes">_Automatic</attribute>
+        <attribute name="action">win.number-format</attribute>
+        <attribute name="target">automatic</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "fixed"; other possible options are "_Automatic", "_Scientific" and "_Engineering" -->
+        <attribute name="label" translatable="yes">_Fixed</attribute>
+        <attribute name="action">win.number-format</attribute>
+        <attribute name="target">fixed</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "scientific"; other possible options are "_Fixed", "_Automatic" and "_Engineering" -->
+        <attribute name="label" translatable="yes">_Scientific</attribute>
+        <attribute name="action">win.number-format</attribute>
+        <attribute name="target">scientific</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the Setup submenu of the hamburger menu (with a mnemonic that appears when pressing Alt); set number format to "engineering"; other possible options are "_Fixed", "_Scientific" and "_Automatic" -->
+        <attribute name="label" translatable="yes">_Engineering</attribute>
+        <attribute name="action">win.number-format</attribute>
+        <attribute name="target">engineering</attribute>
+      </item>
+
+    </section>
+
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Remember History</attribute>
+        <attribute name="action">win.keep-history</attribute>
+      </item>
+    </section>
+
+    <section>
+      <attribute name="id">help-section</attribute>
+      <item>
+        <attribute name="label" translatable="yes">Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Keyboard Shortcuts</attribute>
+        <attribute name="action">app.shortcuts</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Help</attribute>
+        <attribute name="action">app.help</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">About Valuate</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+  <template class="MathWindow" parent="GtkApplicationWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Valuate</property>
+    <property name="role">valuate</property>
+    <property name="resizable">True</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkHeaderBar" id="headerbar">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="show_close_button">False</property>
+            <child type="title">
+              <object class="GtkMenuButton" id="menu_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="menu_model">window_menu</property>
+                <child internal-child="accessible">
+                  <object class="AtkObject">
+                    <property name="accessible-name" translatable="yes">Mode selection</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkGrid" id="grid1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="valign">center</property>
+                    <property name="column_spacing">6</property>
+                    <child>
+                      <object class="GtkLabel" id="mode_label">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkArrow" id="arrow">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="arrow_type">down</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="title"/>
+                  <class name="text-button"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="undo_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="valign">center</property>
+                <property name="use_underline">True</property>
+                <property name="focus_on_click">False</property>
+                <property name="label" translatable="yes">Undo</property>
+                <property name="tooltip_text" translatable="yes">Undo [Ctrl+Z]</property>
+                <property name="action_name">win.undo</property>
+                <style>
+                  <class name="text-button"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="clear_history_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="valign">center</property>
+                <property name="focus_on_click">False</property>
+                <property name="tooltip_text" translatable="yes">Clear History</property>
+                <property name="action_name">win.clear</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="icon_name">edit-clear-all-symbolic</property>
+                    <property name="icon_size">1</property>
+                  </object>
+                </child>
+                <style>
+                  <class name="image-button"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuButton" id="primary_menu_button">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="menu_model">primary_menu</property>
+                <accelerator key="F10" signal="clicked"/>
+                <child internal-child="accessible">
+                  <object class="AtkObject">
+                    <property name="accessible-name" translatable="yes">Primary menu</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="icon_name">open-menu-symbolic</property>
+                    <property name="icon_size">1</property>
+                  </object>
+                </child>
+                <style>
+                  <class name="image-button"/>
+                </style>
+              </object>
+              <packing>
+                <property name="pack_type">end</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="vexpand">True</property>
+            <property name="border_width">0</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="MathConverter" id="converter">
+                <property name="visible">False</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
+

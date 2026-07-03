@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013, 2016 Michael Catanzaro and contributors -->
+<component type="desktop">
+  <id>org.x.valuate.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Valuate</name>
+  <summary>Perform arithmetic, scientific or financial calculations</summary>
+  <description>
+    <p>
+      Valuate is an application that solves mathematical equations.
+      Though it at first appears to be a simple calculator with only basic
+      arithmetic operations, you can switch into Advanced, Financial, or
+      Programming mode to find a surprising set of capabilities.
+    </p>
+    <p>
+      The Advanced calculator supports many operations, including:
+      logarithms, factorials, trigonometric and hyperbolic functions,
+      modulus division, complex numbers, random number generation, prime
+      factorization and unit conversions.
+    </p>
+    <p>
+      Financial mode supports several computations, including periodic interest
+      rate, present and future value, double declining and straight line
+      depreciation, and many others.
+    </p>
+    <p>
+      Programming mode supports conversion between common bases (binary, octal,
+      decimal, and hexadecimal), boolean algebra, one’s and two’s complementation,
+      character to character code conversion, and more.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot>
+      <image>https://people.gnome.org/~mcatanzaro/valuate-basic-mode.png</image>
+      <caption>Valuate in Basic Mode</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://people.gnome.org/~mcatanzaro/valuate-advanced-mode.png</image>
+      <caption>Valuate in Advanced Mode</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://people.gnome.org/~mcatanzaro/valuate-financial-mode.png</image>
+      <caption>Valuate in Financial Mode</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://people.gnome.org/~mcatanzaro/valuate-programming-mode.png</image>
+      <caption>Valuate in Programming Mode</caption>
+    </screenshot>
+  </screenshots>
+  <update_contact>mcatanzaro_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <developer_name>The GNOME Project</developer_name>
+  <url type="homepage">https://wiki.gnome.org/Apps/Calculator</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/valuate/issues</url>
+  <url type="donation">http://www.gnome.org/donate/</url>
+  <url type="help">https://help.gnome.org/users/valuate/stable/</url>
+  <translation type="gettext">valuate</translation>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="41.0" date="2021-09-18" type="stable">
+      <description>
+        <p>Overview of changes in valuate 41.0</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Use first translated symbol for conversion with button #219 (Robert Roth)</li>
+          <li>Appdata includes hardware support information (Adrien Plazas)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41.rc" date="2021-09-04" type="development">
+      <description>
+        <p>Overview of changes in valuate 41.rc</p>
+        <ul>
+          <li>Updated Translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41.alpha" date="2021-07-10" type="development">
+      <description>
+        <p>Overview of changes in valuate 41.alpha</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Adaptive preferences window !85 (Adrien Plazas)</li>
+          <li>Fixed currency conversion using convert button #216 (Robert Roth)</li>
+          <li>User interface reworked, adaptive UI !81 (Adrien Plazas)</li>
+          <li>Enlarged calculator icon in help !82 (Sabri Ünal)</li>
+          <li>Code cleanup (Robert Roth)</li>
+          <li>Fixed kilohertz shorthand !87 (scootergrisen)</li>
+          <li>Fixed donation link !88 (René Genz)</li>
+          <li>Added support using calculator without currency conversion for privacy !89 (Ray Strode)</li>
+          <li>Added support for function description of custom functions using @ !90 (Martin Jirku)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-19" type="stable">
+      <description>
+        <p>Overview of changes in valuate 40.0</p>
+        <ul>
+          <li>Updated Translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.rc" date="2021-03-12" type="development">
+      <description>
+        <p>Overview of changes in valuate 40.rc</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Resize window after switching mode !78 (joshas)</li>
+          <li>Fixed compilation warnings (Robert Roth)</li>
+          <li>Support offline currency conversion tests #208 (Robert Roth)</li>
+          <li>Use official unit on conversion button click #207 (Robert Roth)</li>
+          <li>Fixed temperature unit typos #211 (Robert Roth)</li>
+          <li>Ellipsize conversion labels #17 (Robert Roth)</li>
+          <li>Added Ctrl+Delete shortcut for clearing the current equation #187 (Robert Roth)</li>
+          <li>Allow multiple decimal points #166. #5 (Robert Roth)</li>
+          <li>Added Ctrl+O shortcut for degrees symbol (Robert Roth)</li>
+          <li>Use gtk-sourceview 4.8 !80 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>  
+    <release version="40.beta" date="2021-02-05" type="development">
+      <description>
+        <p>Overview of changes in valuate 40.beta</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Fixed CI build (Robert Roth)</li>
+          <li>Fixed issues with initial loading of currencies (Robert Roth)</li>
+          <li>Rework currency retrieval preparing for currency provider plugins (Robert Roth)</li>
+          <li>Fixed commandline conversions #33 (Robert Roth)</li>
+          <li>Added currency conversion tests (Robert Roth)</li>
+          <li>Added support for frequencies conversion (Dave Hulst)</li>
+          <li>Added support for converting to and from weeks (Dave Hulst)</li>
+          <li>Added support for converting to and from centuries and decades (Dave Hulst)</li>
+          <li>Increase buttons font size #201 (Robert Roth)</li>
+          <li>Added % button to Advanced mode (Dave Hulst)</li>
+          <li>Show 4 decimals in converter instead of only two #203 (Robert Roth)</li>
+          <li>Added style classes to buttons !76 (Dave Hulst)</li>
+        </ul>
+      </description>
+    </release>  
+    <release version="40.alpha" date="2021-01-10" type="development">
+      <description>
+        <p>Overview of changes in valuate 40.alpha</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Use libhandy for window and headerbar !69 (Cristopher Davis)</li>
+          <li>Use C instead of Clr in help !70 (scootergrisen)</li>
+          <li>Fixed broken currency conversion on first start #199 (Robert Roth)</li>
+          <li>Removed duplicate word from help #198 (Robert Roth)</li>
+          <li>Added lbs shortcut for pounds conversion (Robert Roth)</li>
+          <li>Fixed inconsistent word size (A. M. Roswell)</li>
+          <li>Removed unused trunc button from programming mode #41 (Robert Roth)</li>
+          <li>Fixed deprecation warnings</li>
+          <li>Added Serbian Dinar with fixed rate #49 (Robert Roth)</li>
+          <li>Added Bangladeshi Taka with fixed rate #191 (A. M. Roswell)</li>
+          <li>Updated mailing list contact to Discourse (Robert Roth)</li>
+          <li>Added basic help page for programming mode (A. M. Roswell)</li>
+          <li>Added insert character code button (A. M. Roswell)</li>
+          <li>Dim inapplicable bits on word size change #189 (A. M. Roswell)</li>
+          <li>Make the conversion labels selectable (Robert Roth)</li>
+          <li>Do not convert on swap #170 (Robert Roth)</li>
+          <li>Word size changer in programming mode !58 (A. M. Roswell)</li>
+          <li>Added metric cups conversion unit !53 (Lucy Coleclough)</li>
+          <li>Fixed astronomical unit conversion !51 (Thomas Nilsson)</li>
+          <li>Fixed feet-based units name, added mph and kph shortcuts #180 (Robert Roth)</li>
+          <li>Use shell copy to clipboard action #178 (Robert Roth)  </li>
+          <li>Fixed preferences of angle units !56 (Delton Ding)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.38.0" date="2020-09-11" type="stable">
+      <description>
+        <p>Overview of changes in valuate 3.38.0</p>
+        <ul>
+          <li>Updated German translation (Mario Blättermann)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen, Alan Mortensen)</li>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.37.92" date="2020-09-04" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.37.92</p>
+        <ul>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Updated Japanese translation (sicklylife)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Brazilian Portuguese translation (Yuri Gomes)</li>
+          <li>Updated Persian translation (Daniel Behzadi)</li>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated British English translation (Zander Brown)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>Updated Slovak translation (Dušan Kazik)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.37.90" date="2020-08-06" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.37.90</p>
+        <ul>
+          <li>Add tooltips for bits in programming mode !46 (Olliver Schinagl)</li>
+          <li>Updated French translation (Guillaume Bernard)</li>
+          <li>Updated Indonesian translation (Andika Triwidada)</li>
+          <li>Updated Ukrainian translation (Daniel Korostil, Yuri Chornoivan)</li>
+          <li>Updated Catalan translation (Jordi Mas, Gil Forcada)</li>
+          <li>Updated Basque translation (Ibai Oihanguren Sala, Asier Sarasua Garmendia)</li>
+          <li>Updated Hebrew translation (Yosef Or Boczko)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>snap packaging updates (Ken VanDine)</li>
+          <li>Added link to website in About #155 (Robert Roth)</li>
+          <li>Added speed conversions !49 (Mathieu Heurtevin)</li>
+          <li>Updated Romanian translation (Florentina Mușat)</li>
+          <li>History view follows preferences #105, #159, #168 (Robert Roth)</li>
+          <li>Added month as time unit #158 (Robert Roth)</li>
+          <li>Better help for variables example usage #154 (Robert Roth)</li>
+          <li>Defined pi variable, added pi button in programming mode #153 (Robert Roth)</li>
+          <li>CI build fixes (Robert Roth)</li>
+          <li>Updated app icon !47 (Jakub Steiner)</li>
+          <li>Fixed bug returning empty string as result #152 (Robert Roth)</li>
+          <li>Support latex-style multiplication #164 (Robert Roth)</li>
+          <li>Added support for tau constant #46 (Robert Roth)</li>
+          <li>Unify constant handling (Robert Roth)</li>
+          <li>Separate UI files from sources (Robert Roth)</li>
+          <li>Moved number format selection to separate menu #24 (Robert Roth)</li>
+          <li>Replaces mode selector shortcuts with Ctrl+Alt (Robert Roth)</li>
+          <li>Clear answer if editing right before it #59, #161 (Robert Roth)</li>
+          <li>Moved preferences dialog to UI file (Robert Roth)</li>
+          <li>Refresh bits panel after calculation #38 (Robert Roth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Kazakh translation (Baurzhan Muftakhidinov)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Chinese translation (Boyuan Yang)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Removed past author addresses #174 (Robert Roth)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.36.0" date="2020-03-07" type="stable">
+      <description>
+        <p>Overview of changes in valuate 3.36.0</p>
+        <ul>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Fixed broken markup in XHosa UI translation (Andre Klapper)</li>
+          <li>Updated Swedish translation (Anders Jonsson)  </li>
+          <li>Updated Italian translation (Janvitus)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Fixed broken markup in Dzongka UI translation (Andre Klapper)</li>
+          <li>Updated Czech help translation (Marek Černocký)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.92" date="2020-02-29" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.35.92</p>
+        <ul>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Documentation build fixes (Rico Tzschichholz)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Removed obsolete keyboard shortcut #148 (Robert Roth)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Update British English translation (Bruce Cowan)</li>
+          <li>Updated Japanese translation (sicklylife)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Chinese (Taiwan) translation (pesder)</li>
+          <li>Updated Danish translation (Alan Mortensen)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>help: Update icon for 3.36 (Andre Klapper)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+          <li>Updated French translation (Julien Humbert)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.90" date="2020-02-01" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.35.90</p>
+        <ul>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+          <li>Updated Indonesian translation (Sucipto)</li>
+          <li>Drop padding around the display !40 (Adrien Plazas)</li>
+          <li>Updated Keyboard Shortcuts (Sabri Ünal)</li>
+          <li>Handle Escape and Enter correctly with completion #144 (Robert Roth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Slovak translation (Dušan Kazik)</li>
+          <li>Added F10 for primary menu shortcut #148 (Robert Roth)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated app icon !43 (Tobias Bernard)</li>
+          <li>Updated Malay translation (Umarzuki Mochlis)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Added Rack Units to the conversions !37 (Léo Gillot-Lamure)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Fixed freeze on calculating atan(+/-i) #139 (Robert Roth)</li>
+          <li>Fixed mode shortcuts by removing blocking mnemonics #138 (Robert Roth)</li>
+          <li>Implemented result history browsing using alt left/right #129 (Robert Roth)</li>
+          <li>Added translator comments for possible modes as command line arguments !38 (Rafael Fontenelle)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.3" date="2020-01-05" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.35.3</p>
+        <ul>
+          <li>Updated Chinese (Taiwan) translation (Yi-Jyun Pan)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Help updates (Andre Klapper)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.2" date="2019-11-24" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.35.2</p>
+        <ul>
+          <li>Updated Italian translation (Milo Casagrande)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>List possible modes in commandline help #112 (Robert Roth)</li>
+          <li>Add square feet unit #132 (Robert Roth)</li>
+          <li>Base conversion display selectable #123 (Robert Roth)</li>
+          <li>Created nightly icon (Jakub Steiner)</li>
+          <li>Snap build updates (Heather Ellsworth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>GCalc library code fixes (Rico Tzschichholz, Daniel Espinoza Ortiz)</li>
+          <li>Update required meson version (Diego Escalante Urrelo)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Adapt code to changed gtk+-3.0 bindings (Rico Tzschichholz)</li>
+          <li>Added GCi libary and tests for controllers for widgets (Daniel Espinoza Ortiz)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Indonesian translation (Andika Triwidada)</li>
+          <li>Solve on = key if input isq not a variable name #22 (Alberto González Palomo)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.34.0" date="2019-09-09" type="stable">
+      <description>
+        <p>Overview of changes in valuate 3.34.0</p>
+        <ul>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.92" date="2019-09-02" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.33.92</p>
+        <ul>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated British English translation (Zander)</li>
+          <li>Updated Turkish translation (Ahmet Elgün)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated French translation (Charles Monzat)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+          <li>README updates (Roger)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.90" date="2019-08-06" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.33.90</p>
+        <ul>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Romanian translation (Florentina Mușat)</li>
+          <li>Flatpak build cleanup (Jordan Petridis)</li>
+          <li>Debug messages cleanup (Daniel Espinosa Ortiz)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.3" date="2019-06-17" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.33.3</p>
+        <ul>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+          <li>calculator library build fixes (Daniel Espinosa Ortiz)</li>
+          <li>CI build fixes (Ken VanDine)</li>
+          <li>Added mnemonics for primary menu items #113 (Robert Roth)</li>
+          <li>Dropped leading zeros octal prefix #114, #109, #110 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.2" date="2019-05-21" type="development">
+      <description>
+        <p>Overview of changes in valuate 3.33.2</p>
+        <ul>
+          <li>Separated calculator library !19 (Daniel Espinosa Ortiz)</li>
+          <li>Ensure icon is available for shell (Ken VanDine)</li>
+          <li>Updated French translation (Charles Monzat)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Support entering left/right shift with keyboard #98 (Robert Roth)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Fixed CFA conversion rate #102 (Robert Roth)</li>
+          <li>Remove copy icon from search provider results #103 (Robert Roth)</li>
+          <li>Do not assume octal base for binary numbers #101 (Robert Roth)</li>
+          <li>Show thousands separator in unit converter #102 (Robert Roth)</li>
+          <li>Use currency name instead of display name for conversion #106 (Robert Roth)</li>
+          <li>Quit warns and closes all windows #51 (Robert Roth)</li>
+          <li>Avoid normalizing the equation twice in search #104 (Pascal Nowack)</li>
+          <li>Ignore keypresses while calculating results #47 (Robert Roth)</li>
+          <li>Only allow one decimal point in numbers #5 (Robert Roth)</li>
+          <li>Application icon updated in help (Andre Klapper)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Updated Chinese translation (Dingzhong Chen)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.0" date="2019-03-11">
+      <description>
+        <p>Overview of changes in valuate 3.32.0</p>
+        <ul>
+	  <li>Updated Esperanto translation (Kristjan Esperanto)</li>
+	  <li>Updated Korean translation (Changwoo Ryu)</li>
+	  <li>Updated Slovenian translation (Matej Urbančič)</li>
+	  <li>Snap build update (Ken VanDine)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.92" date="2019-03-05">
+      <description>
+        <p>Overview of changes in valuate 3.31.92</p>
+        <ul>
+	  <li>Updated Turkish translation (Emin Tufan)</li>
+	  <li>Updated French translation (Guillaume Bernard)</li>
+	  <li>Updated Dutch translation (Nathan Follens)</li>
+	  <li>Updated Lithuanian translation (Aurimas Černius)</li>
+	  <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+	  <li>Updated Italian translation (Milo Casagrande)</li>
+	  <li>Updated Russian translation (Stas Solovey)</li>
+	  <li>Updated Serbian translation (Марко Костић)</li>
+	  <li>Updated Friulian translation (Fabio Tomat)</li>
+	  <li>Updated German translation (Tim Sabsch)</li>
+	  <li>Updated Vietnamese translation (Trần Ngọc Quân)</li>
+	  <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+	  <li>Updated Finnish translation (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.91" date="2019-02-18">
+      <description>
+        <p>Overview of changes in valuate 3.31.91</p>
+        <ul>
+          <li>Updated Danish translation (Alan Mortensen)</li>
+          <li>Updated Kazakh translation (Baurzhan Muftakhidinov)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Czech translation (Marek Cernocky)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Romanian translation (Daniel Șerbănescu)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+          <li>Additional syntax for unit conversion (Tuomas Mikkola)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.90" date="2019-02-04">
+      <description>
+        <p>Overview of changes in valuate 3.31.90</p>
+        <ul>
+        <li>Updated Friulian translation (Fabio Tomat)</li>
+        <li>Updated Greek translation (Tom Tryfonidis)</li>
+        <li>Updated Swedish translation (Anders Jonsson)</li>
+        <li>Updated Spanish translation (Daniel Mustieles)</li>
+        <li>Updated Japanese translation (Ryuta Fujii)</li>
+        <li>Updated Slovenian translation (Matej Urbančič)</li>
+        <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+        <li>Updated Hungarian translation (Balázs Úr)</li>
+        <li>Updated Czech translation (Daniel Rusek)</li>
+        <li>Updated Catalan translation (Jordi Maas)</li>
+        <li>snap build fixes (Jeremy Bicha)</li>
+        <li>Exchange rate update interval preference #58 (Robert Roth)</li>
+        <li>Updated and fixed appdata !20 (Harald H.)</li>
+        <li>Fix for digit transformed into ^ on double       <li>#91 (Robert Roth)</li></li>
+        <li>Accept comma and decimal point as decimal separator #86 (Robert Roth)</li>
+        </ul>
+      </description>
+
+    </release>
+    <release version="3.30.1" date="2018-09-24">
+      <description>
+        <p>Overview of changes in valuate 3.30.1:</p>
+        <ul>
+          <li>Fix opening multiple windows in GNOME Shell (Florian Müllner)</li>
+          <li>Mark some strings translatable (Robert Roth)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Croatian translations (Goran Vidović)</li>
+          <li>Updated Czech translation (Marek Cernocky)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated German translation (Mario Blättermann)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Italian translation (Janvitus)</li>
+          <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Romanian translation (Daniel Șerbănescu)</li>
+          <li>Updated Russian translation (Stas Solovey)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Turkish translation (Emin Tufan Çetin)</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <custom>
+    <value key="Purism::form_factor">workstation</value>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
+</component>

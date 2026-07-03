@@ -1,0 +1,19 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">Valuate</name>
+  <shortdesc xml:lang="en">Desktop calculator</shortdesc>
+  <homepage rdf:resource="https://github.com/valuate-calculator/valuate" />
+  <bug-database rdf:resource="https://github.com/valuate-calculator/valuate/issues" />
+  <repository>
+    <GitRepository>
+        <location rdf:resource="https://github.com/valuate-calculator/valuate.git" />
+        <browse rdf:resource="https://github.com/valuate-calculator/valuate" />
+    </GitRepository>
+  </repository>
+  <programming-language>Vala</programming-language>
+  <description xml:lang="en">Valuate is a desktop calculator application that solves mathematical equations, based on GTK3 and XApp libraries.</description>
+</Project>
